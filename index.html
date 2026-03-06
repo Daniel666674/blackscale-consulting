@@ -14,17 +14,19 @@
   <!-- NAV -->
   <header class="nav">
     <div class="container nav__inner">
-      <a href="#" class="logo">
-        <svg class="logo__bb" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="40" font-family="'Cormorant Garamond', serif" font-size="44" font-weight="300" fill="currentColor" letter-spacing="-6">BB</text>
+      <a href="index.html" class="logo">
+        <!-- To use the attached logo image, save it as logo.png in this folder and replace the SVG below with: <img src="logo.png" alt="Blackscale" class="logo__img" /> -->
+        <svg class="logo__bb" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="2" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor" opacity="0.55">B</text>
+          <text x="20" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor">B</text>
         </svg>
         <span class="logo__wordmark">BLACKSCALE</span>
       </a>
       <nav class="nav__links">
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#process">Process</a>
-        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+        <a href="services.html">Services</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html" class="btn btn--outline">Get in Touch</a>
       </nav>
       <button class="nav__burger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -34,10 +36,10 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#services">Services</a>
-    <a href="#why">Why Us</a>
-    <a href="#process">Process</a>
-    <a href="#contact">Get in Touch</a>
+    <a href="services.html">Services</a>
+    <a href="why-us.html">Why Us</a>
+    <a href="process.html">Process</a>
+    <a href="contact.html">Get in Touch</a>
   </div>
 
   <!-- HERO -->
@@ -55,8 +57,8 @@
         with strategies built around real data and real outcomes.
       </p>
       <div class="hero__cta">
-        <a href="#contact" class="btn btn--primary">Book a Strategy Call</a>
-        <a href="#services" class="btn btn--ghost">Explore Services</a>
+        <a href="contact.html" class="btn btn--primary">Book a Strategy Call</a>
+        <a href="services.html" class="btn btn--ghost">Explore Services</a>
       </div>
       <div class="hero__stats">
         <div class="stat">
@@ -77,7 +79,7 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES PREVIEW -->
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
@@ -129,10 +131,13 @@
           <p>Translate marketing data into clear revenue attribution. We build dashboards and reporting systems so you always know what's working.</p>
         </div>
       </div>
+      <div class="section-cta">
+        <a href="services.html" class="btn btn--outline-burgundy">View All Services</a>
+      </div>
     </div>
   </section>
 
-  <!-- WHY US -->
+  <!-- WHY US PREVIEW -->
   <section class="why" id="why">
     <div class="container why__inner">
       <div class="why__text">
@@ -169,6 +174,9 @@
             </div>
           </li>
         </ul>
+        <div style="margin-top: 40px;">
+          <a href="why-us.html" class="btn btn--outline-burgundy">Learn More About Us</a>
+        </div>
       </div>
       <div class="why__visual">
         <div class="why__card-stack">
@@ -192,7 +200,42 @@
     </div>
   </section>
 
-  <!-- PROCESS -->
+  <!-- FOUNDERS -->
+  <section class="founders" id="founders">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Team</span>
+        <h2>Meet the<br /><em>founders.</em></h2>
+        <p>The people behind Blackscale Consulting — building better B2B growth, together.</p>
+      </div>
+      <div class="founders__grid">
+        <!-- Founder 1 — update name, title, bio, and photo when ready -->
+        <div class="founder-card">
+          <div class="founder-card__photo">
+            <div class="founder-card__initials">F1</div>
+          </div>
+          <div class="founder-card__info">
+            <h3>Founder Name</h3>
+            <p class="founder-card__title">Co-Founder & CEO</p>
+            <p class="founder-card__bio">Bio coming soon. We'll add a brief background about this founder's expertise, journey, and vision for Blackscale Consulting.</p>
+          </div>
+        </div>
+        <!-- Founder 2 — update name, title, bio, and photo when ready -->
+        <div class="founder-card">
+          <div class="founder-card__photo">
+            <div class="founder-card__initials">F2</div>
+          </div>
+          <div class="founder-card__info">
+            <h3>Founder Name</h3>
+            <p class="founder-card__title">Co-Founder & COO</p>
+            <p class="founder-card__bio">Bio coming soon. We'll add a brief background about this founder's expertise, journey, and vision for Blackscale Consulting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS PREVIEW -->
   <section class="process" id="process">
     <div class="container">
       <div class="section-header">
@@ -225,6 +268,9 @@
           <p>We measure, learn, and iterate. Monthly reporting keeps leadership informed and the strategy continuously improving.</p>
         </div>
       </div>
+      <div class="section-cta">
+        <a href="process.html" class="btn btn--outline-burgundy">See the Full Process</a>
+      </div>
     </div>
   </section>
 
@@ -235,61 +281,26 @@
         <h2>Ready to scale your revenue?</h2>
         <p>Book a no-obligation strategy call. We'll diagnose your biggest growth bottleneck in 30 minutes.</p>
       </div>
-      <a href="#contact" class="btn btn--primary btn--lg">Book a Free Strategy Call</a>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="container contact__inner">
-      <div class="contact__text">
-        <span class="section-tag">Let's Talk</span>
-        <h2>Start the<br /><em>conversation.</em></h2>
-        <p>Tell us about your business and where you want to grow. We'll follow up within one business day.</p>
-        <div class="contact__info">
-          <a href="mailto:hello@blackscaleconsulting.com">hello@blackscaleconsulting.com</a>
-        </div>
-      </div>
-      <form class="contact__form" id="contactForm">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-          </div>
-          <div class="form-group">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company" placeholder="Acme Corp" required />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="email">Work Email</label>
-          <input type="email" id="email" name="email" placeholder="jane@acme.com" required />
-        </div>
-        <div class="form-group">
-          <label for="challenge">What's your biggest growth challenge?</label>
-          <textarea id="challenge" name="challenge" rows="4" placeholder="Tell us about your current pipeline, goals, or where you're stuck..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-        <p class="form__note">We respond within 1 business day. No spam, ever.</p>
-      </form>
+      <a href="contact.html" class="btn btn--primary btn--lg">Book a Free Strategy Call</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="#" class="logo logo--footer">
-        <svg class="logo__bb" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="40" font-family="'Cormorant Garamond', serif" font-size="44" font-weight="300" fill="currentColor" letter-spacing="-6">BB</text>
+      <a href="index.html" class="logo logo--footer">
+        <svg class="logo__bb" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="2" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor" opacity="0.55">B</text>
+          <text x="20" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor">B</text>
         </svg>
         <span class="logo__wordmark">BLACKSCALE</span>
       </a>
       <p class="footer__tagline">B2B Marketing & Revenue Growth Consulting</p>
       <nav class="footer__nav">
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <p class="footer__copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
     </div>

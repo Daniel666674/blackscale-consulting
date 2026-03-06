@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get in Touch — Blackscale Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo">
+        <svg class="logo__bb" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="2" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor" opacity="0.55">B</text>
+          <text x="20" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor">B</text>
+        </svg>
+        <span class="logo__wordmark">BLACKSCALE</span>
+      </a>
+      <nav class="nav__links">
+        <a href="services.html">Services</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html" class="btn btn--outline active">Get in Touch</a>
+      </nav>
+      <button class="nav__burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="services.html">Services</a>
+    <a href="why-us.html">Why Us</a>
+    <a href="process.html">Process</a>
+    <a href="contact.html">Get in Touch</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Get in Touch</span>
+      </div>
+      <div class="page-header__tag">Let's Talk</div>
+      <h1>Start the<br /><em>conversation.</em></h1>
+      <p>Tell us about your business and where you want to grow. We'll follow up within one business day to book your free strategy call.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT FULL -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__text">
+        <span class="section-tag">Reach Out</span>
+        <h2>We respond<br /><em>within 24 hours.</em></h2>
+        <p>No gatekeeping, no junior account rep. You'll hear directly from one of our founders within one business day.</p>
+
+        <div class="contact__info" style="margin-top: 40px;">
+          <a href="mailto:hello@blackscaleconsulting.com">hello@blackscaleconsulting.com</a>
+        </div>
+
+        <!-- What happens next -->
+        <div style="margin-top: 52px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px;">What happens after you submit</p>
+          <ol style="list-style: none; display: flex; flex-direction: column; gap: 18px; padding: 0;">
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <span style="font-family: var(--serif); font-size: 22px; color: var(--burgundy-mid); font-weight: 400; line-height: 1; flex-shrink: 0;">1</span>
+              <div>
+                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;">We review your submission</strong>
+                <span style="font-size: 13px; color: var(--muted); font-weight: 300;">We read every submission personally — no auto-replies or bots.</span>
+              </div>
+            </li>
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <span style="font-family: var(--serif); font-size: 22px; color: var(--burgundy-mid); font-weight: 400; line-height: 1; flex-shrink: 0;">2</span>
+              <div>
+                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;">We follow up within 24 hours</strong>
+                <span style="font-size: 13px; color: var(--muted); font-weight: 300;">A founder reaches out to schedule your free strategy call.</span>
+              </div>
+            </li>
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <span style="font-family: var(--serif); font-size: 22px; color: var(--burgundy-mid); font-weight: 400; line-height: 1; flex-shrink: 0;">3</span>
+              <div>
+                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;">30-minute strategy call</strong>
+                <span style="font-size: 13px; color: var(--muted); font-weight: 300;">We diagnose your biggest growth bottleneck — no commitment required.</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div>
+        <!-- Contact Form — submits to Formspree -->
+        <!--
+          SETUP INSTRUCTIONS:
+          1. Go to https://formspree.io and create a free account
+          2. Create a new form and copy your Form ID
+          3. Replace "YOUR_FORM_ID" in the action URL below with your actual ID
+          4. In Formspree, set up email notifications to your inbox
+          5. Optionally connect to Google Sheets via the Formspree integrations tab
+             (or use Zapier/Make to push submissions into your pipeline document)
+        -->
+        <form
+          class="contact__form"
+          id="contactForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <!-- Hidden field to identify source in pipeline -->
+          <input type="hidden" name="_source" value="Blackscale Website" />
+          <input type="hidden" name="_subject" value="New Lead — Blackscale Consulting" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company *</label>
+              <input type="text" id="company" name="company" placeholder="Acme Corp" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" name="email" placeholder="jane@acme.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="company_size">Company Size</label>
+            <select id="company_size" name="company_size">
+              <option value="" disabled selected>Select company size</option>
+              <option value="1-10">1–10 employees</option>
+              <option value="11-50">11–50 employees</option>
+              <option value="51-200">51–200 employees</option>
+              <option value="201-500">201–500 employees</option>
+              <option value="500+">500+ employees</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Primary Interest</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>What can we help with?</option>
+              <option value="Demand Generation">Demand Generation</option>
+              <option value="Revenue Operations">Revenue Operations</option>
+              <option value="Sales Enablement">Sales Enablement</option>
+              <option value="Account-Based Marketing">Account-Based Marketing</option>
+              <option value="Go-to-Market Strategy">Go-to-Market Strategy</option>
+              <option value="Performance Analytics">Performance Analytics</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="challenge">What's your biggest growth challenge? *</label>
+            <textarea id="challenge" name="challenge" rows="5" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck. The more context, the more useful our strategy call will be..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Send Message & Book a Call</button>
+          <p class="form__note">We respond within 1 business day. No spam, ever.</p>
+        </form>
+
+        <!-- Success State -->
+        <div class="form-success" id="formSuccess">
+          <h3>Message received.</h3>
+          <p>Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo logo--footer">
+        <svg class="logo__bb" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="2" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor" opacity="0.55">B</text>
+          <text x="20" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor">B</text>
+        </svg>
+        <span class="logo__wordmark">BLACKSCALE</span>
+      </a>
+      <p class="footer__tagline">B2B Marketing & Revenue Growth Consulting</p>
+      <nav class="footer__nav">
+        <a href="services.html">Services</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
