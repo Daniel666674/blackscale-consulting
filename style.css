@@ -1518,3 +1518,48 @@ a { color: inherit; text-decoration: none; }
   max-width: 740px;
   margin: 0 auto;
 }
+
+/* =========================================
+   LANGUAGE SWITCHER
+   ========================================= */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 8px;
+}
+.lang-divider {
+  color: var(--border-light);
+  font-size: 11px;
+  padding: 0 1px;
+  user-select: none;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  padding: 4px 5px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  line-height: 1;
+}
+.lang-btn:hover { color: var(--cream-light); }
+.lang-btn.active  { color: var(--cream-light); }
+
+/* Mobile lang row inside mobile menu */
+.mobile-lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+.mobile-lang .lang-btn { font-size: 13px; padding: 6px 8px; }
+.mobile-lang .lang-divider { font-size: 13px; }

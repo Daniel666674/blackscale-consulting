@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Make step numbers more visible */
     .step__num { color: rgba(85, 28, 37, 0.72) !important; }
     .process-item__num { opacity: 1 !important; }
   </style>
@@ -27,11 +26,16 @@
         <span class="logo__wordmark">BLACKSCALE</span>
       </a>
       <nav class="nav__links">
-        <a href="services.html">Services</a>
-        <a href="why-us.html">Why Us</a>
-        <a href="process.html" class="active">Process</a>
-        <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="why-us.html" data-i18n="nav.why">Why Us</a>
+        <a href="process.html" class="active" data-i18n="nav.process">Process</a>
+        <a href="contact.html" class="btn btn--outline" data-i18n="nav.cta">Get in Touch</a>
       </nav>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
       <button class="nav__burger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -40,23 +44,28 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="services.html">Services</a>
-    <a href="why-us.html">Why Us</a>
-    <a href="process.html">Process</a>
-    <a href="contact.html">Get in Touch</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="why-us.html" data-i18n="nav.why">Why Us</a>
+    <a href="process.html" data-i18n="nav.process">Process</a>
+    <a href="contact.html" data-i18n="nav.cta">Get in Touch</a>
+    <div class="mobile-lang">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
   </div>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html">Home</a>
+        <a href="index.html" data-i18n="breadcrumb.home">Home</a>
         <span>/</span>
-        <span>Process</span>
+        <span data-i18n="breadcrumb.process">Process</span>
       </div>
-      <div class="page-header__tag">How We Work</div>
-      <h1>A clear path from<br /><em>strategy to growth.</em></h1>
-      <p>No fluff. No 90-day onboarding. No smoke and mirrors. We get to work fast and show results early — with full transparency at every step.</p>
+      <div class="page-header__tag" data-i18n="process.page.tag">How We Work</div>
+      <h1 data-i18n-html="process.page.h1">A clear path from<br /><em>strategy to growth.</em></h1>
+      <p data-i18n="process.page.sub">No fluff. No 90-day onboarding. No smoke and mirrors. We get to work fast and show results early — with full transparency at every step.</p>
     </div>
   </section>
 
@@ -66,26 +75,26 @@
       <div class="process__steps">
         <div class="step">
           <div class="step__num">01</div>
-          <h3>Diagnose</h3>
-          <p>We audit your current marketing and sales engine — identifying gaps, leaks, and untapped opportunities in your pipeline. No assumptions, just data.</p>
+          <h3 data-i18n="process.s1.h">Diagnose</h3>
+          <p data-i18n="process.s1.p">We audit your current marketing and sales engine — identifying gaps, leaks, and untapped opportunities in your pipeline. No assumptions, just data.</p>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__num">02</div>
-          <h3>Strategize</h3>
-          <p>We build a tailored growth plan with clear priorities, channel selection, and 90-day milestones tied to your specific revenue targets.</p>
+          <h3 data-i18n="process.s2.h">Strategize</h3>
+          <p data-i18n="process.s2.p">We build a tailored growth plan with clear priorities, channel selection, and 90-day milestones tied to your specific revenue targets.</p>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__num">03</div>
-          <h3>Execute</h3>
-          <p>We run the plays — campaigns, content, outreach, and enablement — with your team embedded at every step of execution.</p>
+          <h3 data-i18n="process.s3.h">Execute</h3>
+          <p data-i18n="process.s3.p">We run the plays — campaigns, content, outreach, and enablement — with your team embedded at every step of execution.</p>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__num">04</div>
-          <h3>Optimize</h3>
-          <p>We measure, learn, and iterate. Monthly reporting keeps leadership informed and the strategy continuously improving.</p>
+          <h3 data-i18n="process.s4.h">Optimize</h3>
+          <p data-i18n="process.s4.p">We measure, learn, and iterate. Monthly reporting keeps leadership informed and the strategy continuously improving.</p>
         </div>
       </div>
     </div>
@@ -95,37 +104,37 @@
   <section class="process-detail">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">What to Expect</span>
-        <h2>Inside each<br /><em>phase of engagement.</em></h2>
-        <p>Here's what we actually do — in detail — at each stage of working together.</p>
+        <span class="section-tag" data-i18n="tag.what_to_expect">What to Expect</span>
+        <h2 data-i18n-html="detail.heading">Inside each<br /><em>phase of engagement.</em></h2>
+        <p data-i18n="detail.sub">Here's what we actually do — in detail — at each stage of working together.</p>
       </div>
       <div class="process-detail__grid">
         <div class="process-item">
           <div class="process-item__num">01</div>
           <div>
-            <h3>The Diagnosis Call</h3>
-            <p>We start with a 60-minute deep-dive into your business — current pipeline, revenue targets, team structure, tools, and what's been tried before. This isn't a sales call; it's a working session. We come prepared with questions that surface the real growth blockers.</p>
+            <h3 data-i18n="detail.d1.h">The Diagnosis Call</h3>
+            <p data-i18n="detail.d1.p">We start with a 60-minute deep-dive into your business — current pipeline, revenue targets, team structure, tools, and what's been tried before. This isn't a sales call; it's a working session. We come prepared with questions that surface the real growth blockers.</p>
           </div>
         </div>
         <div class="process-item">
           <div class="process-item__num">02</div>
           <div>
-            <h3>The Growth Blueprint</h3>
-            <p>Within two weeks of kick-off, you receive a full Growth Blueprint: a prioritized roadmap with specific initiatives, channel recommendations, 90-day milestones, and the KPIs we'll hold ourselves to. No fluff — just a clear plan of attack.</p>
+            <h3 data-i18n="detail.d2.h">The Growth Blueprint</h3>
+            <p data-i18n="detail.d2.p">Within two weeks of kick-off, you receive a full Growth Blueprint: a prioritized roadmap with specific initiatives, channel recommendations, 90-day milestones, and the KPIs we'll hold ourselves to. No fluff — just a clear plan of attack.</p>
           </div>
         </div>
         <div class="process-item">
           <div class="process-item__num">03</div>
           <div>
-            <h3>Embedded Execution</h3>
-            <p>We don't hand off a deck and disappear. Our team embeds with yours — running campaigns, building content, coordinating outreach, and iterating in real time. You always know what we're working on and why.</p>
+            <h3 data-i18n="detail.d3.h">Embedded Execution</h3>
+            <p data-i18n="detail.d3.p">We don't hand off a deck and disappear. Our team embeds with yours — running campaigns, building content, coordinating outreach, and iterating in real time. You always know what we're working on and why.</p>
           </div>
         </div>
         <div class="process-item">
           <div class="process-item__num">04</div>
           <div>
-            <h3>Monthly Performance Reviews</h3>
-            <p>Every month, we review what worked, what didn't, and where we're doubling down. These sessions are with your leadership team and are built around pipeline and revenue data — not activity metrics.</p>
+            <h3 data-i18n="detail.d4.h">Monthly Performance Reviews</h3>
+            <p data-i18n="detail.d4.p">Every month, we review what worked, what didn't, and where we're doubling down. These sessions are with your leadership team and are built around pipeline and revenue data — not activity metrics.</p>
           </div>
         </div>
       </div>
@@ -136,78 +145,73 @@
   <section class="contact-inline">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Get in Touch</span>
-        <h2>Start the<br /><em>conversation.</em></h2>
-        <p>Tell us about your business and goals. We'll follow up within one business day to book your free strategy call.</p>
+        <span class="section-tag" data-i18n="tag.get_in_touch">Get in Touch</span>
+        <h2 data-i18n-html="contact.heading">Start the<br /><em>conversation.</em></h2>
+        <p data-i18n="contact.sub">Tell us about your business and goals. We'll follow up within one business day to book your free strategy call.</p>
       </div>
       <form class="contact__form contact-inline__form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <input type="hidden" name="_source" value="Blackscale Website" />
         <input type="hidden" name="_subject" value="New Lead — Blackscale Consulting" />
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Full Name *</label>
+            <label for="name" data-i18n="form.name">Full Name *</label>
             <input type="text" id="name" name="name" placeholder="Jane Smith" required />
           </div>
           <div class="form-group">
-            <label for="company">Company *</label>
+            <label for="company" data-i18n="form.company">Company *</label>
             <input type="text" id="company" name="company" placeholder="Acme Corp" required />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="email">Work Email *</label>
+            <label for="email" data-i18n="form.email">Work Email *</label>
             <input type="email" id="email" name="email" placeholder="jane@acme.com" required />
           </div>
           <div class="form-group">
-            <label for="phone">Phone (optional)</label>
+            <label for="phone" data-i18n="form.phone">Phone (optional)</label>
             <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
           </div>
         </div>
         <div class="form-group">
-          <label for="service">Primary Interest</label>
+          <label for="service" data-i18n="form.interest.label">Primary Interest</label>
           <select id="service" name="service">
-            <option value="" disabled selected>What can we help with?</option>
-            <option value="Demand Generation">Demand Generation</option>
-            <option value="Revenue Operations">Revenue Operations</option>
-            <option value="Sales Enablement">Sales Enablement</option>
-            <option value="Account-Based Marketing">Account-Based Marketing</option>
-            <option value="Go-to-Market Strategy">Go-to-Market Strategy</option>
-            <option value="Performance Analytics">Performance Analytics</option>
-            <option value="Not sure yet">Not sure yet</option>
+            <option value="" disabled selected data-i18n="form.interest.placeholder">What can we help with?</option>
+            <option value="Demand Generation" data-i18n="form.interest.demand">Demand Generation</option>
+            <option value="Revenue Operations" data-i18n="form.interest.revops">Revenue Operations</option>
+            <option value="Sales Enablement" data-i18n="form.interest.sales">Sales Enablement</option>
+            <option value="Account-Based Marketing" data-i18n="form.interest.abm">Account-Based Marketing</option>
+            <option value="Go-to-Market Strategy" data-i18n="form.interest.gtm">Go-to-Market Strategy</option>
+            <option value="Performance Analytics" data-i18n="form.interest.analytics">Performance Analytics</option>
+            <option value="Not sure yet" data-i18n="form.interest.notsure">Not sure yet</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="challenge">What's your biggest growth challenge? *</label>
-          <textarea id="challenge" name="challenge" rows="4" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck..." required></textarea>
+          <label for="challenge" data-i18n="form.challenge.label">What's your biggest growth challenge? *</label>
+          <textarea id="challenge" name="challenge" rows="4" data-i18n-placeholder="form.challenge.placeholder" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck..." required></textarea>
         </div>
-        <button type="submit" class="btn btn--primary btn--full">Send Message & Book a Call</button>
-        <p class="form__note">We respond within 1 business day. No spam, ever.</p>
+        <button type="submit" class="btn btn--primary btn--full" data-i18n="form.submit">Send Message & Book a Call</button>
+        <p class="form__note" data-i18n="form.note">We respond within 1 business day. No spam, ever.</p>
       </form>
       <div class="form-success" id="formSuccess">
-        <h3>Message received.</h3>
-        <p>Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.</p>
+        <h3 data-i18n="form.success.h">Message received.</h3>
+        <p data-i18n="form.success.p">Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <!-- CTA Strip -->
     <div class="footer__cta-strip">
       <div class="container footer__cta-inner">
         <div class="footer__cta-text">
-          <h3>Ready to scale your revenue?</h3>
-          <p>Let's talk about your growth goals. No pitch, just strategy.</p>
+          <h3 data-i18n="footer.cta.h">Ready to scale your revenue?</h3>
+          <p data-i18n="footer.cta.p">Let's talk about your growth goals. No pitch, just strategy.</p>
         </div>
-        <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        <a href="contact.html" class="btn btn--primary" data-i18n="footer.contact_us">Contact Us</a>
       </div>
     </div>
-
-    <!-- Main grid -->
     <div class="footer__main">
       <div class="container footer__grid">
-
-        <!-- Brand -->
         <div class="footer__col footer__col--brand">
           <a href="index.html" class="logo logo--footer">
             <svg class="logo__bb" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +220,7 @@
             </svg>
             <span class="logo__wordmark">BLACKSCALE</span>
           </a>
-          <p class="footer__desc">B2B Marketing &amp; Revenue Growth Consulting. We help ambitious companies build structured, measurable growth engines.</p>
+          <p class="footer__desc" data-i18n="footer.desc">B2B Marketing &amp; Revenue Growth Consulting. We help ambitious companies build structured, measurable growth engines.</p>
           <div class="footer__contact-info">
             <a href="mailto:hello@blackscale.co" class="footer__contact-link">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -233,62 +237,54 @@
             <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
           </div>
         </div>
-
-        <!-- Services -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Services</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.services">Services</h4>
           <ul class="footer__col-links">
-            <li><a href="services.html">Demand Generation</a></li>
-            <li><a href="services.html">Revenue Operations</a></li>
-            <li><a href="services.html">Sales Enablement</a></li>
-            <li><a href="services.html">Account-Based Marketing</a></li>
-            <li><a href="services.html">Go-to-Market Strategy</a></li>
-            <li><a href="services.html">Performance Analytics</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.demand">Demand Generation</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.revops">Revenue Operations</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.sales">Sales Enablement</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.abm">Account-Based Marketing</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.gtm">Go-to-Market Strategy</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.analytics">Performance Analytics</a></li>
           </ul>
         </div>
-
-        <!-- Company -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Company</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.company">Company</h4>
           <ul class="footer__col-links">
-            <li><a href="why-us.html">Why Blackscale</a></li>
-            <li><a href="process.html">Our Process</a></li>
-            <li><a href="why-us.html#founders">The Team</a></li>
-            <li><a href="why-us.html#success-cases">Success Cases</a></li>
-            <li><a href="contact.html">Careers</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="why-us.html" data-i18n="footer.co.why">Why Blackscale</a></li>
+            <li><a href="process.html" data-i18n="footer.co.process">Our Process</a></li>
+            <li><a href="why-us.html#founders" data-i18n="footer.co.team">The Team</a></li>
+            <li><a href="why-us.html#success-cases" data-i18n="footer.co.success">Success Cases</a></li>
+            <li><a href="contact.html" data-i18n="footer.co.careers">Careers</a></li>
+            <li><a href="contact.html" data-i18n="footer.co.contact">Contact</a></li>
           </ul>
         </div>
-
-        <!-- Legal -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Legal &amp; Policies</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.legal">Legal &amp; Policies</h4>
           <ul class="footer__col-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Data Management</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">GDPR Compliance</a></li>
-            <li><a href="#">Accessibility</a></li>
+            <li><a href="#" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.legal.data">Data Management</a></li>
+            <li><a href="#" data-i18n="footer.legal.terms">Terms of Service</a></li>
+            <li><a href="#" data-i18n="footer.legal.cookie">Cookie Policy</a></li>
+            <li><a href="#" data-i18n="footer.legal.gdpr">GDPR Compliance</a></li>
+            <li><a href="#" data-i18n="footer.legal.access">Accessibility</a></li>
           </ul>
         </div>
-
       </div>
     </div>
-
-    <!-- Bottom bar -->
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p class="footer__copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
         <div class="footer__bottom-links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Cookies</a>
+          <a href="#" data-i18n="footer.bottom.privacy">Privacy</a>
+          <a href="#" data-i18n="footer.bottom.terms">Terms</a>
+          <a href="#" data-i18n="footer.bottom.cookies">Cookies</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

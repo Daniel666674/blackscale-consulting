@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Fix dimmed step numbers in How We Work section */
     .step__num { color: rgba(85, 28, 37, 0.72) !important; }
   </style>
 </head>
@@ -19,7 +18,6 @@
   <header class="nav">
     <div class="container nav__inner">
       <a href="index.html" class="logo">
-        <!-- To use the attached logo image, save it as logo.png in this folder and replace the SVG below with: <img src="logo.png" alt="Blackscale" class="logo__img" /> -->
         <svg class="logo__bb" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg">
           <text x="2" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor" opacity="0.55">B</text>
           <text x="20" y="40" font-family="'Cormorant Garamond', serif" font-size="46" font-weight="600" fill="currentColor">B</text>
@@ -27,11 +25,16 @@
         <span class="logo__wordmark">BLACKSCALE</span>
       </a>
       <nav class="nav__links">
-        <a href="services.html">Services</a>
-        <a href="why-us.html">Why Us</a>
-        <a href="process.html">Process</a>
-        <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="why-us.html" data-i18n="nav.why">Why Us</a>
+        <a href="process.html" data-i18n="nav.process">Process</a>
+        <a href="contact.html" class="btn btn--outline" data-i18n="nav.cta">Get in Touch</a>
       </nav>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
       <button class="nav__burger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -40,43 +43,48 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="services.html">Services</a>
-    <a href="why-us.html">Why Us</a>
-    <a href="process.html">Process</a>
-    <a href="contact.html">Get in Touch</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="why-us.html" data-i18n="nav.why">Why Us</a>
+    <a href="process.html" data-i18n="nav.process">Process</a>
+    <a href="contact.html" data-i18n="nav.cta">Get in Touch</a>
+    <div class="mobile-lang">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
   </div>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero__texture"></div>
     <div class="container hero__inner">
-      <h1 class="hero__headline">
+      <h1 class="hero__headline" data-i18n-html="hero.headline">
         Marketing that<br />
         <em>moves the needle.</em>
       </h1>
-      <p class="hero__sub">
+      <p class="hero__sub" data-i18n="hero.sub">
         Blackscale Consulting helps B2B companies generate high-quality leads,
         sharpen their sales pipeline, and unlock sustainable revenue growth —
         with strategies built around real data and real outcomes.
       </p>
       <div class="hero__cta">
-        <a href="contact.html" class="btn btn--primary">Book a Strategy Call</a>
-        <a href="services.html" class="btn btn--ghost">Explore Services</a>
+        <a href="contact.html" class="btn btn--primary" data-i18n="btn.strategy_call">Book a Strategy Call</a>
+        <a href="services.html" class="btn btn--ghost" data-i18n="btn.explore">Explore Services</a>
       </div>
       <div class="hero__stats">
         <div class="stat">
           <span class="stat__num">3x</span>
-          <span class="stat__label">Average pipeline growth</span>
+          <span class="stat__label" data-i18n="hero.stat1">Average pipeline growth</span>
         </div>
         <div class="stat__divider"></div>
         <div class="stat">
           <span class="stat__num">40%</span>
-          <span class="stat__label">Reduction in sales cycle</span>
+          <span class="stat__label" data-i18n="hero.stat2">Reduction in sales cycle</span>
         </div>
         <div class="stat__divider"></div>
         <div class="stat">
           <span class="stat__num">100%</span>
-          <span class="stat__label">Focus on B2B revenue</span>
+          <span class="stat__label" data-i18n="hero.stat3">Focus on B2B revenue</span>
         </div>
       </div>
     </div>
@@ -86,56 +94,56 @@
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">What We Do</span>
-        <h2>End-to-end B2B growth,<br /><em>done right.</em></h2>
-        <p>From demand generation to deal closure, we cover every lever that drives revenue.</p>
+        <span class="section-tag" data-i18n="tag.what_we_do">What We Do</span>
+        <h2 data-i18n-html="idx.svc.heading">End-to-end B2B growth,<br /><em>done right.</em></h2>
+        <p data-i18n="idx.svc.sub">From demand generation to deal closure, we cover every lever that drives revenue.</p>
       </div>
       <div class="services__grid">
         <div class="card">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18M3 9h18M3 15h12M3 21h8"/></svg>
           </div>
-          <h3>Demand Generation</h3>
-          <p>Build repeatable pipelines with targeted campaigns, content strategy, and multi-channel outreach that brings the right buyers to your door.</p>
+          <h3 data-i18n="svc.demand.h">Demand Generation</h3>
+          <p data-i18n="svc.demand.p">Build repeatable pipelines with targeted campaigns, content strategy, and multi-channel outreach that brings the right buyers to your door.</p>
         </div>
         <div class="card">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
           </div>
-          <h3>Revenue Operations</h3>
-          <p>Align your sales, marketing, and customer success teams around unified data, optimized processes, and the tools that make closing easier.</p>
+          <h3 data-i18n="svc.revops.h">Revenue Operations</h3>
+          <p data-i18n="svc.revops.p">Align your sales, marketing, and customer success teams around unified data, optimized processes, and the tools that make closing easier.</p>
         </div>
         <div class="card">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3>Sales Enablement</h3>
-          <p>Give your sales team the playbooks, messaging frameworks, and competitive intelligence they need to win more deals, faster.</p>
+          <h3 data-i18n="svc.sales.h">Sales Enablement</h3>
+          <p data-i18n="svc.sales.p">Give your sales team the playbooks, messaging frameworks, and competitive intelligence they need to win more deals, faster.</p>
         </div>
         <div class="card">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
-          <h3>Account-Based Marketing</h3>
-          <p>Identify and engage your ideal accounts with precision targeting, personalized content, and coordinated campaigns designed to open doors.</p>
+          <h3 data-i18n="svc.abm.h">Account-Based Marketing</h3>
+          <p data-i18n="svc.abm.p">Identify and engage your ideal accounts with precision targeting, personalized content, and coordinated campaigns designed to open doors.</p>
         </div>
         <div class="card">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
-          <h3>Go-to-Market Strategy</h3>
-          <p>Launch new products or enter new markets with confidence. We build GTM plans grounded in competitive research, ICP definition, and channel strategy.</p>
+          <h3 data-i18n="svc.gtm.h">Go-to-Market Strategy</h3>
+          <p data-i18n="svc.gtm.p">Launch new products or enter new markets with confidence. We build GTM plans grounded in competitive research, ICP definition, and channel strategy.</p>
         </div>
         <div class="card">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
           </div>
-          <h3>Performance Analytics</h3>
-          <p>Translate marketing data into clear revenue attribution. We build dashboards and reporting systems so you always know what's working.</p>
+          <h3 data-i18n="svc.analytics.h">Performance Analytics</h3>
+          <p data-i18n="svc.analytics.p">Translate marketing data into clear revenue attribution. We build dashboards and reporting systems so you always know what's working.</p>
         </div>
       </div>
       <div class="section-cta">
-        <a href="services.html" class="btn btn--outline-burgundy">View All Services</a>
+        <a href="services.html" class="btn btn--outline-burgundy" data-i18n="btn.view_all">View All Services</a>
       </div>
     </div>
   </section>
@@ -144,41 +152,41 @@
   <section class="why" id="why">
     <div class="container why__inner">
       <div class="why__text">
-        <span class="section-tag">Why Blackscale</span>
-        <h2>We don't do<br /><em>vanity metrics.</em></h2>
-        <p>Most marketing agencies track clicks and impressions. We track pipeline, revenue, and growth. Every engagement is tied to outcomes that matter to your business.</p>
+        <span class="section-tag" data-i18n="tag.why">Why Blackscale</span>
+        <h2 data-i18n-html="idx.why.heading">We don't do<br /><em>vanity metrics.</em></h2>
+        <p data-i18n="idx.why.sub">Most marketing agencies track clicks and impressions. We track pipeline, revenue, and growth. Every engagement is tied to outcomes that matter to your business.</p>
         <ul class="why__list">
           <li>
             <span class="check"></span>
             <div>
-              <strong>Revenue-first mindset</strong>
-              <p>Every strategy and tactic is evaluated on its ability to drive measurable revenue impact.</p>
+              <strong data-i18n="idx.why.li1.strong">Revenue-first mindset</strong>
+              <p data-i18n="idx.why.li1.p">Every strategy and tactic is evaluated on its ability to drive measurable revenue impact.</p>
             </div>
           </li>
           <li>
             <span class="check"></span>
             <div>
-              <strong>Deep B2B expertise</strong>
-              <p>We work exclusively in B2B. We understand complex sales cycles, buying committees, and enterprise dynamics.</p>
+              <strong data-i18n="idx.why.li2.strong">Deep B2B expertise</strong>
+              <p data-i18n="idx.why.li2.p">We work exclusively in B2B. We understand complex sales cycles, buying committees, and enterprise dynamics.</p>
             </div>
           </li>
           <li>
             <span class="check"></span>
             <div>
-              <strong>Embedded, not outsourced</strong>
-              <p>We work as an extension of your team, not a distant vendor. You get senior-level thinking and hands-on execution.</p>
+              <strong data-i18n="idx.why.li3.strong">Embedded, not outsourced</strong>
+              <p data-i18n="idx.why.li3.p">We work as an extension of your team, not a distant vendor. You get senior-level thinking and hands-on execution.</p>
             </div>
           </li>
           <li>
             <span class="check"></span>
             <div>
-              <strong>Built to scale with you</strong>
-              <p>Our frameworks are designed to be owned by your team long-term, not to create dependency on us.</p>
+              <strong data-i18n="idx.why.li4.strong">Built to scale with you</strong>
+              <p data-i18n="idx.why.li4.p">Our frameworks are designed to be owned by your team long-term, not to create dependency on us.</p>
             </div>
           </li>
         </ul>
         <div style="margin-top: 40px;">
-          <a href="why-us.html" class="btn btn--outline-burgundy">Learn More About Us</a>
+          <a href="why-us.html" class="btn btn--outline-burgundy" data-i18n="btn.learn_more">Learn More About Us</a>
         </div>
       </div>
     </div>
@@ -188,31 +196,29 @@
   <section class="founders" id="founders">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">The Team</span>
-        <h2>Meet the<br /><em>founders.</em></h2>
-        <p>The people behind Blackscale Consulting — building better B2B growth, together.</p>
+        <span class="section-tag" data-i18n="tag.team">The Team</span>
+        <h2 data-i18n-html="founders.heading">Meet the<br /><em>founders.</em></h2>
+        <p data-i18n="founders.sub">The people behind Blackscale Consulting — building better B2B growth, together.</p>
       </div>
       <div class="founders__grid">
-        <!-- Founder 1 — update name, title, bio, and photo when ready -->
         <div class="founder-card">
           <div class="founder-card__photo">
             <div class="founder-card__initials">F1</div>
           </div>
           <div class="founder-card__info">
             <h3>Founder Name</h3>
-            <p class="founder-card__title">Co-Founder & CEO</p>
-            <p class="founder-card__bio">Bio coming soon. We'll add a brief background about this founder's expertise, journey, and vision for Blackscale Consulting.</p>
+            <p class="founder-card__title" data-i18n="founders.f1.title">Co-Founder & CEO</p>
+            <p class="founder-card__bio" data-i18n="founders.bio">Bio coming soon. We'll add a brief background about this founder's expertise, journey, and vision for Blackscale Consulting.</p>
           </div>
         </div>
-        <!-- Founder 2 — update name, title, bio, and photo when ready -->
         <div class="founder-card">
           <div class="founder-card__photo">
             <div class="founder-card__initials">F2</div>
           </div>
           <div class="founder-card__info">
             <h3>Founder Name</h3>
-            <p class="founder-card__title">Co-Founder & COO</p>
-            <p class="founder-card__bio">Bio coming soon. We'll add a brief background about this founder's expertise, journey, and vision for Blackscale Consulting.</p>
+            <p class="founder-card__title" data-i18n="founders.f2.title">Co-Founder & COO</p>
+            <p class="founder-card__bio" data-i18n="founders.bio">Bio coming soon. We'll add a brief background about this founder's expertise, journey, and vision for Blackscale Consulting.</p>
           </div>
         </div>
       </div>
@@ -223,37 +229,37 @@
   <section class="process" id="process">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">How We Work</span>
-        <h2>A clear path from<br /><em>strategy to growth.</em></h2>
-        <p>No fluff. No 90-day onboarding. We get to work fast and show results early.</p>
+        <span class="section-tag" data-i18n="tag.how_we_work">How We Work</span>
+        <h2 data-i18n-html="idx.process.heading">A clear path from<br /><em>strategy to growth.</em></h2>
+        <p data-i18n="idx.process.sub">No fluff. No 90-day onboarding. We get to work fast and show results early.</p>
       </div>
       <div class="process__steps">
         <div class="step">
           <div class="step__num">01</div>
-          <h3>Diagnose</h3>
-          <p>We audit your current marketing and sales engine — identifying gaps, leaks, and untapped opportunities in your pipeline.</p>
+          <h3 data-i18n="idx.process.s1.h">Diagnose</h3>
+          <p data-i18n="idx.process.s1.p">We audit your current marketing and sales engine — identifying gaps, leaks, and untapped opportunities in your pipeline.</p>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__num">02</div>
-          <h3>Strategize</h3>
-          <p>We build a tailored growth plan with clear priorities, channel selection, and 90-day milestones tied to revenue targets.</p>
+          <h3 data-i18n="idx.process.s2.h">Strategize</h3>
+          <p data-i18n="idx.process.s2.p">We build a tailored growth plan with clear priorities, channel selection, and 90-day milestones tied to revenue targets.</p>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__num">03</div>
-          <h3>Execute</h3>
-          <p>We run the plays — campaigns, content, outreach, and enablement — with your team embedded at every step.</p>
+          <h3 data-i18n="idx.process.s3.h">Execute</h3>
+          <p data-i18n="idx.process.s3.p">We run the plays — campaigns, content, outreach, and enablement — with your team embedded at every step.</p>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__num">04</div>
-          <h3>Optimize</h3>
-          <p>We measure, learn, and iterate. Monthly reporting keeps leadership informed and the strategy continuously improving.</p>
+          <h3 data-i18n="idx.process.s4.h">Optimize</h3>
+          <p data-i18n="idx.process.s4.p">We measure, learn, and iterate. Monthly reporting keeps leadership informed and the strategy continuously improving.</p>
         </div>
       </div>
       <div class="section-cta">
-        <a href="process.html" class="btn btn--outline-burgundy">See the Full Process</a>
+        <a href="process.html" class="btn btn--outline-burgundy" data-i18n="btn.full_process">See the Full Process</a>
       </div>
     </div>
   </section>
@@ -262,78 +268,73 @@
   <section class="contact-inline">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Get in Touch</span>
-        <h2>Start the<br /><em>conversation.</em></h2>
-        <p>Tell us about your business and goals. We'll follow up within one business day to book your free strategy call.</p>
+        <span class="section-tag" data-i18n="tag.get_in_touch">Get in Touch</span>
+        <h2 data-i18n-html="contact.heading">Start the<br /><em>conversation.</em></h2>
+        <p data-i18n="contact.sub">Tell us about your business and goals. We'll follow up within one business day to book your free strategy call.</p>
       </div>
       <form class="contact__form contact-inline__form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <input type="hidden" name="_source" value="Blackscale Website" />
         <input type="hidden" name="_subject" value="New Lead — Blackscale Consulting" />
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Full Name *</label>
+            <label for="name" data-i18n="form.name">Full Name *</label>
             <input type="text" id="name" name="name" placeholder="Jane Smith" required />
           </div>
           <div class="form-group">
-            <label for="company">Company *</label>
+            <label for="company" data-i18n="form.company">Company *</label>
             <input type="text" id="company" name="company" placeholder="Acme Corp" required />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="email">Work Email *</label>
+            <label for="email" data-i18n="form.email">Work Email *</label>
             <input type="email" id="email" name="email" placeholder="jane@acme.com" required />
           </div>
           <div class="form-group">
-            <label for="phone">Phone (optional)</label>
+            <label for="phone" data-i18n="form.phone">Phone (optional)</label>
             <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
           </div>
         </div>
         <div class="form-group">
-          <label for="service">Primary Interest</label>
+          <label for="service" data-i18n="form.interest.label">Primary Interest</label>
           <select id="service" name="service">
-            <option value="" disabled selected>What can we help with?</option>
-            <option value="Demand Generation">Demand Generation</option>
-            <option value="Revenue Operations">Revenue Operations</option>
-            <option value="Sales Enablement">Sales Enablement</option>
-            <option value="Account-Based Marketing">Account-Based Marketing</option>
-            <option value="Go-to-Market Strategy">Go-to-Market Strategy</option>
-            <option value="Performance Analytics">Performance Analytics</option>
-            <option value="Not sure yet">Not sure yet</option>
+            <option value="" disabled selected data-i18n="form.interest.placeholder">What can we help with?</option>
+            <option value="Demand Generation" data-i18n="form.interest.demand">Demand Generation</option>
+            <option value="Revenue Operations" data-i18n="form.interest.revops">Revenue Operations</option>
+            <option value="Sales Enablement" data-i18n="form.interest.sales">Sales Enablement</option>
+            <option value="Account-Based Marketing" data-i18n="form.interest.abm">Account-Based Marketing</option>
+            <option value="Go-to-Market Strategy" data-i18n="form.interest.gtm">Go-to-Market Strategy</option>
+            <option value="Performance Analytics" data-i18n="form.interest.analytics">Performance Analytics</option>
+            <option value="Not sure yet" data-i18n="form.interest.notsure">Not sure yet</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="challenge">What's your biggest growth challenge? *</label>
-          <textarea id="challenge" name="challenge" rows="4" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck..." required></textarea>
+          <label for="challenge" data-i18n="form.challenge.label">What's your biggest growth challenge? *</label>
+          <textarea id="challenge" name="challenge" rows="4" data-i18n-placeholder="form.challenge.placeholder" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck..." required></textarea>
         </div>
-        <button type="submit" class="btn btn--primary btn--full">Send Message & Book a Call</button>
-        <p class="form__note">We respond within 1 business day. No spam, ever.</p>
+        <button type="submit" class="btn btn--primary btn--full" data-i18n="form.submit">Send Message & Book a Call</button>
+        <p class="form__note" data-i18n="form.note">We respond within 1 business day. No spam, ever.</p>
       </form>
       <div class="form-success" id="formSuccess">
-        <h3>Message received.</h3>
-        <p>Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.</p>
+        <h3 data-i18n="form.success.h">Message received.</h3>
+        <p data-i18n="form.success.p">Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <!-- CTA Strip -->
     <div class="footer__cta-strip">
       <div class="container footer__cta-inner">
         <div class="footer__cta-text">
-          <h3>Ready to scale your revenue?</h3>
-          <p>Let's talk about your growth goals. No pitch, just strategy.</p>
+          <h3 data-i18n="footer.cta.h">Ready to scale your revenue?</h3>
+          <p data-i18n="footer.cta.p">Let's talk about your growth goals. No pitch, just strategy.</p>
         </div>
-        <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        <a href="contact.html" class="btn btn--primary" data-i18n="footer.contact_us">Contact Us</a>
       </div>
     </div>
-
-    <!-- Main grid -->
     <div class="footer__main">
       <div class="container footer__grid">
-
-        <!-- Brand -->
         <div class="footer__col footer__col--brand">
           <a href="index.html" class="logo logo--footer">
             <svg class="logo__bb" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -342,7 +343,7 @@
             </svg>
             <span class="logo__wordmark">BLACKSCALE</span>
           </a>
-          <p class="footer__desc">B2B Marketing &amp; Revenue Growth Consulting. We help ambitious companies build structured, measurable growth engines.</p>
+          <p class="footer__desc" data-i18n="footer.desc">B2B Marketing &amp; Revenue Growth Consulting. We help ambitious companies build structured, measurable growth engines.</p>
           <div class="footer__contact-info">
             <a href="mailto:hello@blackscale.co" class="footer__contact-link">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -359,62 +360,54 @@
             <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
           </div>
         </div>
-
-        <!-- Services -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Services</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.services">Services</h4>
           <ul class="footer__col-links">
-            <li><a href="services.html">Demand Generation</a></li>
-            <li><a href="services.html">Revenue Operations</a></li>
-            <li><a href="services.html">Sales Enablement</a></li>
-            <li><a href="services.html">Account-Based Marketing</a></li>
-            <li><a href="services.html">Go-to-Market Strategy</a></li>
-            <li><a href="services.html">Performance Analytics</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.demand">Demand Generation</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.revops">Revenue Operations</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.sales">Sales Enablement</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.abm">Account-Based Marketing</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.gtm">Go-to-Market Strategy</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.analytics">Performance Analytics</a></li>
           </ul>
         </div>
-
-        <!-- Company -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Company</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.company">Company</h4>
           <ul class="footer__col-links">
-            <li><a href="why-us.html">Why Blackscale</a></li>
-            <li><a href="process.html">Our Process</a></li>
-            <li><a href="why-us.html#founders">The Team</a></li>
-            <li><a href="why-us.html#success-cases">Success Cases</a></li>
-            <li><a href="contact.html">Careers</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="why-us.html" data-i18n="footer.co.why">Why Blackscale</a></li>
+            <li><a href="process.html" data-i18n="footer.co.process">Our Process</a></li>
+            <li><a href="why-us.html#founders" data-i18n="footer.co.team">The Team</a></li>
+            <li><a href="why-us.html#success-cases" data-i18n="footer.co.success">Success Cases</a></li>
+            <li><a href="contact.html" data-i18n="footer.co.careers">Careers</a></li>
+            <li><a href="contact.html" data-i18n="footer.co.contact">Contact</a></li>
           </ul>
         </div>
-
-        <!-- Legal -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Legal &amp; Policies</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.legal">Legal &amp; Policies</h4>
           <ul class="footer__col-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Data Management</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">GDPR Compliance</a></li>
-            <li><a href="#">Accessibility</a></li>
+            <li><a href="#" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.legal.data">Data Management</a></li>
+            <li><a href="#" data-i18n="footer.legal.terms">Terms of Service</a></li>
+            <li><a href="#" data-i18n="footer.legal.cookie">Cookie Policy</a></li>
+            <li><a href="#" data-i18n="footer.legal.gdpr">GDPR Compliance</a></li>
+            <li><a href="#" data-i18n="footer.legal.access">Accessibility</a></li>
           </ul>
         </div>
-
       </div>
     </div>
-
-    <!-- Bottom bar -->
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p class="footer__copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
         <div class="footer__bottom-links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Cookies</a>
+          <a href="#" data-i18n="footer.bottom.privacy">Privacy</a>
+          <a href="#" data-i18n="footer.bottom.terms">Terms</a>
+          <a href="#" data-i18n="footer.bottom.cookies">Cookies</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

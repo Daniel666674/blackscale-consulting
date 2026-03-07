@@ -22,11 +22,16 @@
         <span class="logo__wordmark">BLACKSCALE</span>
       </a>
       <nav class="nav__links">
-        <a href="services.html">Services</a>
-        <a href="why-us.html">Why Us</a>
-        <a href="process.html">Process</a>
-        <a href="contact.html" class="btn btn--outline active">Get in Touch</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="why-us.html" data-i18n="nav.why">Why Us</a>
+        <a href="process.html" data-i18n="nav.process">Process</a>
+        <a href="contact.html" class="btn btn--outline active" data-i18n="nav.cta">Get in Touch</a>
       </nav>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
       <button class="nav__burger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -35,23 +40,28 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="services.html">Services</a>
-    <a href="why-us.html">Why Us</a>
-    <a href="process.html">Process</a>
-    <a href="contact.html">Get in Touch</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="why-us.html" data-i18n="nav.why">Why Us</a>
+    <a href="process.html" data-i18n="nav.process">Process</a>
+    <a href="contact.html" data-i18n="nav.cta">Get in Touch</a>
+    <div class="mobile-lang">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
   </div>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html">Home</a>
+        <a href="index.html" data-i18n="breadcrumb.home">Home</a>
         <span>/</span>
-        <span>Get in Touch</span>
+        <span data-i18n="breadcrumb.contact">Get in Touch</span>
       </div>
-      <div class="page-header__tag">Let's Talk</div>
-      <h1>Start the<br /><em>conversation.</em></h1>
-      <p>Tell us about your business and where you want to grow. We'll follow up within one business day to book your free strategy call.</p>
+      <div class="page-header__tag" data-i18n="contact.page.tag">Let's Talk</div>
+      <h1 data-i18n-html="contact.page.h1">Start the<br /><em>conversation.</em></h1>
+      <p data-i18n="contact.page.sub">Tell us about your business and where you want to grow. We'll follow up within one business day to book your free strategy call.</p>
     </div>
   </section>
 
@@ -59,37 +69,36 @@
   <section class="contact" id="contact">
     <div class="container contact__inner">
       <div class="contact__text">
-        <span class="section-tag">Reach Out</span>
-        <h2>We respond<br /><em>within 24 hours.</em></h2>
-        <p>No gatekeeping, no junior account rep. You'll hear directly from one of our founders within one business day.</p>
+        <span class="section-tag" data-i18n="contact.reach_out.tag">Reach Out</span>
+        <h2 data-i18n-html="contact.reach_out.heading">We respond<br /><em>within 24 hours.</em></h2>
+        <p data-i18n="contact.reach_out.sub">No gatekeeping, no junior account rep. You'll hear directly from one of our founders within one business day.</p>
 
         <div class="contact__info" style="margin-top: 40px;">
           <a href="mailto:hello@blackscaleconsulting.com">hello@blackscaleconsulting.com</a>
         </div>
 
-        <!-- What happens next -->
         <div style="margin-top: 52px;">
-          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px;">What happens after you submit</p>
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px;" data-i18n="contact.next.label">What happens after you submit</p>
           <ol style="list-style: none; display: flex; flex-direction: column; gap: 18px; padding: 0;">
             <li style="display: flex; gap: 16px; align-items: flex-start;">
               <span style="font-family: var(--serif); font-size: 22px; color: var(--burgundy-mid); font-weight: 400; line-height: 1; flex-shrink: 0;">1</span>
               <div>
-                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;">We review your submission</strong>
-                <span style="font-size: 13px; color: var(--muted); font-weight: 300;">We read every submission personally — no auto-replies or bots.</span>
+                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;" data-i18n="contact.next.s1.strong">We review your submission</strong>
+                <span style="font-size: 13px; color: var(--muted); font-weight: 300;" data-i18n="contact.next.s1.span">We read every submission personally — no auto-replies or bots.</span>
               </div>
             </li>
             <li style="display: flex; gap: 16px; align-items: flex-start;">
               <span style="font-family: var(--serif); font-size: 22px; color: var(--burgundy-mid); font-weight: 400; line-height: 1; flex-shrink: 0;">2</span>
               <div>
-                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;">We follow up within 24 hours</strong>
-                <span style="font-size: 13px; color: var(--muted); font-weight: 300;">A founder reaches out to schedule your free strategy call.</span>
+                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;" data-i18n="contact.next.s2.strong">We follow up within 24 hours</strong>
+                <span style="font-size: 13px; color: var(--muted); font-weight: 300;" data-i18n="contact.next.s2.span">A founder reaches out to schedule your free strategy call.</span>
               </div>
             </li>
             <li style="display: flex; gap: 16px; align-items: flex-start;">
               <span style="font-family: var(--serif); font-size: 22px; color: var(--burgundy-mid); font-weight: 400; line-height: 1; flex-shrink: 0;">3</span>
               <div>
-                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;">30-minute strategy call</strong>
-                <span style="font-size: 13px; color: var(--muted); font-weight: 300;">We diagnose your biggest growth bottleneck — no commitment required.</span>
+                <strong style="display: block; font-size: 13px; font-weight: 600; color: var(--cream-light); margin-bottom: 4px;" data-i18n="contact.next.s3.strong">30-minute strategy call</strong>
+                <span style="font-size: 13px; color: var(--muted); font-weight: 300;" data-i18n="contact.next.s3.span">We diagnose your biggest growth bottleneck — no commitment required.</span>
               </div>
             </li>
           </ol>
@@ -97,87 +106,70 @@
       </div>
 
       <div>
-        <!-- Contact Form — submits to Formspree -->
-        <!--
-          SETUP INSTRUCTIONS:
-          1. Go to https://formspree.io and create a free account
-          2. Create a new form and copy your Form ID
-          3. Replace "YOUR_FORM_ID" in the action URL below with your actual ID
-          4. In Formspree, set up email notifications to your inbox
-          5. Optionally connect to Google Sheets via the Formspree integrations tab
-             (or use Zapier/Make to push submissions into your pipeline document)
-        -->
-        <form
-          class="contact__form"
-          id="contactForm"
-          action="https://formspree.io/f/YOUR_FORM_ID"
-          method="POST"
-        >
-          <!-- Hidden field to identify source in pipeline -->
+        <form class="contact__form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <input type="hidden" name="_source" value="Blackscale Website" />
           <input type="hidden" name="_subject" value="New Lead — Blackscale Consulting" />
 
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Full Name *</label>
+              <label for="name" data-i18n="form.name">Full Name *</label>
               <input type="text" id="name" name="name" placeholder="Jane Smith" required />
             </div>
             <div class="form-group">
-              <label for="company">Company *</label>
+              <label for="company" data-i18n="form.company">Company *</label>
               <input type="text" id="company" name="company" placeholder="Acme Corp" required />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="email">Work Email *</label>
+              <label for="email" data-i18n="form.email">Work Email *</label>
               <input type="email" id="email" name="email" placeholder="jane@acme.com" required />
             </div>
             <div class="form-group">
-              <label for="phone">Phone (optional)</label>
+              <label for="phone" data-i18n="form.phone">Phone (optional)</label>
               <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
             </div>
           </div>
 
           <div class="form-group">
-            <label for="company_size">Company Size</label>
+            <label for="company_size" data-i18n="form.size.label">Company Size</label>
             <select id="company_size" name="company_size">
-              <option value="" disabled selected>Select company size</option>
-              <option value="1-10">1–10 employees</option>
-              <option value="11-50">11–50 employees</option>
-              <option value="51-200">51–200 employees</option>
-              <option value="201-500">201–500 employees</option>
-              <option value="500+">500+ employees</option>
+              <option value="" disabled selected data-i18n="form.size.placeholder">Select company size</option>
+              <option value="1-10" data-i18n="form.size.1_10">1–10 employees</option>
+              <option value="11-50" data-i18n="form.size.11_50">11–50 employees</option>
+              <option value="51-200" data-i18n="form.size.51_200">51–200 employees</option>
+              <option value="201-500" data-i18n="form.size.201_500">201–500 employees</option>
+              <option value="500+" data-i18n="form.size.500plus">500+ employees</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="service">Primary Interest</label>
+            <label for="service" data-i18n="form.interest.label">Primary Interest</label>
             <select id="service" name="service">
-              <option value="" disabled selected>What can we help with?</option>
-              <option value="Demand Generation">Demand Generation</option>
-              <option value="Revenue Operations">Revenue Operations</option>
-              <option value="Sales Enablement">Sales Enablement</option>
-              <option value="Account-Based Marketing">Account-Based Marketing</option>
-              <option value="Go-to-Market Strategy">Go-to-Market Strategy</option>
-              <option value="Performance Analytics">Performance Analytics</option>
-              <option value="Not sure yet">Not sure yet</option>
+              <option value="" disabled selected data-i18n="form.interest.placeholder">What can we help with?</option>
+              <option value="Demand Generation" data-i18n="form.interest.demand">Demand Generation</option>
+              <option value="Revenue Operations" data-i18n="form.interest.revops">Revenue Operations</option>
+              <option value="Sales Enablement" data-i18n="form.interest.sales">Sales Enablement</option>
+              <option value="Account-Based Marketing" data-i18n="form.interest.abm">Account-Based Marketing</option>
+              <option value="Go-to-Market Strategy" data-i18n="form.interest.gtm">Go-to-Market Strategy</option>
+              <option value="Performance Analytics" data-i18n="form.interest.analytics">Performance Analytics</option>
+              <option value="Not sure yet" data-i18n="form.interest.notsure">Not sure yet</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="challenge">What's your biggest growth challenge? *</label>
-            <textarea id="challenge" name="challenge" rows="5" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck. The more context, the more useful our strategy call will be..." required></textarea>
+            <label for="challenge" data-i18n="form.challenge.label">What's your biggest growth challenge? *</label>
+            <textarea id="challenge" name="challenge" rows="5" data-i18n-placeholder="form.challenge.placeholder" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck..." required></textarea>
           </div>
 
-          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Send Message & Book a Call</button>
-          <p class="form__note">We respond within 1 business day. No spam, ever.</p>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn" data-i18n="form.submit">Send Message & Book a Call</button>
+          <p class="form__note" data-i18n="form.note">We respond within 1 business day. No spam, ever.</p>
         </form>
 
-        <!-- Success State -->
         <div class="form-success" id="formSuccess">
-          <h3>Message received.</h3>
-          <p>Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.</p>
+          <h3 data-i18n="form.success.h">Message received.</h3>
+          <p data-i18n="form.success.p">Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.</p>
         </div>
       </div>
     </div>
@@ -185,22 +177,17 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <!-- CTA Strip -->
     <div class="footer__cta-strip">
       <div class="container footer__cta-inner">
         <div class="footer__cta-text">
-          <h3>Ready to scale your revenue?</h3>
-          <p>Let's talk about your growth goals. No pitch, just strategy.</p>
+          <h3 data-i18n="footer.cta.h">Ready to scale your revenue?</h3>
+          <p data-i18n="footer.cta.p">Let's talk about your growth goals. No pitch, just strategy.</p>
         </div>
-        <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        <a href="contact.html" class="btn btn--primary" data-i18n="footer.contact_us">Contact Us</a>
       </div>
     </div>
-
-    <!-- Main grid -->
     <div class="footer__main">
       <div class="container footer__grid">
-
-        <!-- Brand -->
         <div class="footer__col footer__col--brand">
           <a href="index.html" class="logo logo--footer">
             <svg class="logo__bb" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,7 +196,7 @@
             </svg>
             <span class="logo__wordmark">BLACKSCALE</span>
           </a>
-          <p class="footer__desc">B2B Marketing &amp; Revenue Growth Consulting. We help ambitious companies build structured, measurable growth engines.</p>
+          <p class="footer__desc" data-i18n="footer.desc">B2B Marketing &amp; Revenue Growth Consulting. We help ambitious companies build structured, measurable growth engines.</p>
           <div class="footer__contact-info">
             <a href="mailto:hello@blackscale.co" class="footer__contact-link">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -226,62 +213,54 @@
             <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
           </div>
         </div>
-
-        <!-- Services -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Services</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.services">Services</h4>
           <ul class="footer__col-links">
-            <li><a href="services.html">Demand Generation</a></li>
-            <li><a href="services.html">Revenue Operations</a></li>
-            <li><a href="services.html">Sales Enablement</a></li>
-            <li><a href="services.html">Account-Based Marketing</a></li>
-            <li><a href="services.html">Go-to-Market Strategy</a></li>
-            <li><a href="services.html">Performance Analytics</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.demand">Demand Generation</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.revops">Revenue Operations</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.sales">Sales Enablement</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.abm">Account-Based Marketing</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.gtm">Go-to-Market Strategy</a></li>
+            <li><a href="services.html" data-i18n="footer.svc.analytics">Performance Analytics</a></li>
           </ul>
         </div>
-
-        <!-- Company -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Company</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.company">Company</h4>
           <ul class="footer__col-links">
-            <li><a href="why-us.html">Why Blackscale</a></li>
-            <li><a href="process.html">Our Process</a></li>
-            <li><a href="why-us.html#founders">The Team</a></li>
-            <li><a href="why-us.html#success-cases">Success Cases</a></li>
-            <li><a href="contact.html">Careers</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="why-us.html" data-i18n="footer.co.why">Why Blackscale</a></li>
+            <li><a href="process.html" data-i18n="footer.co.process">Our Process</a></li>
+            <li><a href="why-us.html#founders" data-i18n="footer.co.team">The Team</a></li>
+            <li><a href="why-us.html#success-cases" data-i18n="footer.co.success">Success Cases</a></li>
+            <li><a href="contact.html" data-i18n="footer.co.careers">Careers</a></li>
+            <li><a href="contact.html" data-i18n="footer.co.contact">Contact</a></li>
           </ul>
         </div>
-
-        <!-- Legal -->
         <div class="footer__col">
-          <h4 class="footer__col-title">Legal &amp; Policies</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col.legal">Legal &amp; Policies</h4>
           <ul class="footer__col-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Data Management</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">GDPR Compliance</a></li>
-            <li><a href="#">Accessibility</a></li>
+            <li><a href="#" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.legal.data">Data Management</a></li>
+            <li><a href="#" data-i18n="footer.legal.terms">Terms of Service</a></li>
+            <li><a href="#" data-i18n="footer.legal.cookie">Cookie Policy</a></li>
+            <li><a href="#" data-i18n="footer.legal.gdpr">GDPR Compliance</a></li>
+            <li><a href="#" data-i18n="footer.legal.access">Accessibility</a></li>
           </ul>
         </div>
-
       </div>
     </div>
-
-    <!-- Bottom bar -->
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p class="footer__copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
         <div class="footer__bottom-links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Cookies</a>
+          <a href="#" data-i18n="footer.bottom.privacy">Privacy</a>
+          <a href="#" data-i18n="footer.bottom.terms">Terms</a>
+          <a href="#" data-i18n="footer.bottom.cookies">Cookies</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
