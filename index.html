@@ -50,7 +50,6 @@
   <section class="hero">
     <div class="hero__texture"></div>
     <div class="container hero__inner">
-      <div class="hero__badge">B2B Marketing & Revenue Growth</div>
       <h1 class="hero__headline">
         Marketing that<br />
         <em>moves the needle.</em>
@@ -259,14 +258,61 @@
     </div>
   </section>
 
-  <!-- CTA BAND -->
-  <section class="cta-band">
-    <div class="container cta-band__inner">
-      <div>
-        <h2>Ready to scale your revenue?</h2>
-        <p>Book a no-obligation strategy call. We'll diagnose your biggest growth bottleneck in 30 minutes.</p>
+  <!-- CONTACT FORM -->
+  <section class="contact-inline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2>Start the<br /><em>conversation.</em></h2>
+        <p>Tell us about your business and goals. We'll follow up within one business day to book your free strategy call.</p>
       </div>
-      <a href="contact.html" class="btn btn--primary btn--lg">Book a Free Strategy Call</a>
+      <form class="contact__form contact-inline__form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_source" value="Blackscale Website" />
+        <input type="hidden" name="_subject" value="New Lead — Blackscale Consulting" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="company">Company *</label>
+            <input type="text" id="company" name="company" placeholder="Acme Corp" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" name="email" placeholder="jane@acme.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Primary Interest</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>What can we help with?</option>
+            <option value="Demand Generation">Demand Generation</option>
+            <option value="Revenue Operations">Revenue Operations</option>
+            <option value="Sales Enablement">Sales Enablement</option>
+            <option value="Account-Based Marketing">Account-Based Marketing</option>
+            <option value="Go-to-Market Strategy">Go-to-Market Strategy</option>
+            <option value="Performance Analytics">Performance Analytics</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="challenge">What's your biggest growth challenge? *</label>
+          <textarea id="challenge" name="challenge" rows="4" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message & Book a Call</button>
+        <p class="form__note">We respond within 1 business day. No spam, ever.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <h3>Message received.</h3>
+        <p>Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.</p>
+      </div>
     </div>
   </section>
 
