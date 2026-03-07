@@ -8,6 +8,201 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Photography section */
+    .photography-section {
+      padding: 100px 0;
+      background: #090908;
+      border-top: 1px solid var(--border);
+    }
+    .photo-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .photo-text h2 {
+      font-family: var(--serif);
+      font-size: clamp(52px, 7vw, 80px);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      margin-bottom: 36px;
+    }
+    .photo-text p {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--muted-light);
+      line-height: 1.85;
+    }
+    .photo-mosaic { display: flex; flex-direction: column; gap: 6px; }
+    .photo-row-top { display: grid; grid-template-columns: 1.3fr 1fr; gap: 6px; }
+    .photo-row-bottom { display: grid; grid-template-columns: 1fr 0.8fr 1fr 0.8fr; gap: 6px; }
+    .photo-row-top img,
+    .photo-row-bottom img { width: 100%; object-fit: cover; display: block; }
+    .photo-row-top img { height: 280px; }
+    .photo-row-bottom img { height: 196px; }
+    @media (max-width: 900px) {
+      .photo-layout { grid-template-columns: 1fr; }
+      .photo-row-bottom { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* Brand Applications section */
+    .brand-apps-page {
+      position: relative;
+      padding: 72px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 560px;
+    }
+    .brand-apps-page--light  { background: #eceae6; border-top: 1px solid var(--border); }
+    .brand-apps-page--lighter { background: #e2e0dc; border-top: 1px solid #ccc; }
+    .brand-apps-label {
+      position: absolute;
+      top: 22px; left: 40px;
+      font-family: var(--sans); font-size: 11px; color: #888; letter-spacing: 0.05em;
+    }
+    .brand-apps-year {
+      position: absolute;
+      top: 22px; right: 40px;
+      font-family: var(--sans); font-size: 11px; color: #999;
+    }
+    .brand-apps-footer {
+      position: absolute;
+      bottom: 20px; left: 0; right: 0;
+      display: flex; justify-content: space-between; padding: 0 40px;
+      font-family: var(--sans); font-size: 11px; color: #aaa;
+      align-items: center;
+    }
+    .brand-apps-footer span { display: flex; align-items: center; gap: 6px; }
+
+    /* Laptop mockup */
+    .device-laptop { width: 100%; max-width: 700px; }
+    .device-laptop__lid {
+      background: #d2d2d2;
+      border-radius: 12px 12px 0 0;
+      padding: 10px 10px 0;
+      box-shadow: 0 20px 56px rgba(0,0,0,0.22);
+    }
+    .device-laptop__bezel {
+      background: #111;
+      border-radius: 6px 6px 0 0;
+      padding: 5px 5px 0;
+    }
+    .device-laptop__screen {
+      background: #11110F;
+      height: 360px;
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .device-laptop__base {
+      background: #c2c2c2;
+      height: 14px;
+    }
+    .device-laptop__foot {
+      background: #b8b8b8;
+      height: 6px;
+      border-radius: 0 0 8px 8px;
+      max-width: 86%;
+      margin: 0 auto;
+    }
+
+    /* Screen internals */
+    .screen-nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .screen-logo {
+      font-family: var(--serif); font-size: 14px; font-weight: 600;
+      color: #D7D2CB; letter-spacing: 0.22em;
+    }
+    .screen-links { display: flex; gap: 18px; }
+    .screen-links span {
+      font-size: 10px; color: #7a7568; letter-spacing: 0.04em;
+      font-family: var(--sans);
+    }
+    .screen-hero-laptop {
+      padding: 40px 24px 24px;
+      text-align: center;
+      position: relative;
+    }
+    .screen-hero-laptop::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(85,28,37,0.45) 0%, transparent 70%);
+    }
+    .screen-hero-laptop h2 {
+      font-family: var(--serif); font-size: 40px; font-weight: 300;
+      color: #fff; line-height: 1.1; position: relative;
+    }
+    .screen-hero-laptop p {
+      font-size: 11px; color: #a09991; margin-top: 16px;
+      max-width: 320px; margin-left: auto; margin-right: auto;
+      line-height: 1.7; position: relative; font-family: var(--sans); font-weight: 300;
+    }
+
+    /* Phone mockup */
+    .device-phone {
+      width: 180px;
+      background: #1c1c1c;
+      border-radius: 32px;
+      padding: 10px;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.38);
+      transform: perspective(900px) rotateY(-18deg) rotateX(4deg);
+    }
+    .device-phone__screen {
+      background: #11110F;
+      border-radius: 22px;
+      overflow: hidden;
+      height: 360px;
+      position: relative;
+    }
+    .screen-status {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 8px 14px 4px;
+      font-family: var(--sans); font-size: 8px; color: #ccc;
+    }
+    .screen-nav-mobile {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 6px 14px 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .screen-logo-sm {
+      font-family: var(--serif); font-size: 10px; font-weight: 600;
+      color: #D7D2CB; letter-spacing: 0.18em;
+    }
+    .screen-burger { display: flex; flex-direction: column; gap: 2.5px; }
+    .screen-burger span { display: block; width: 12px; height: 1px; background: #aaa; }
+    .screen-hero-phone {
+      padding: 20px 14px;
+      position: relative;
+    }
+    .screen-hero-phone::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 200px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(85,28,37,0.5) 0%, transparent 70%);
+    }
+    .screen-hero-phone h3 {
+      font-family: var(--serif); font-size: 19px; font-weight: 300;
+      color: #fff; line-height: 1.12; margin-bottom: 10px; position: relative;
+    }
+    .screen-hero-phone p {
+      font-size: 7.5px; color: #a09991; line-height: 1.6;
+      margin-bottom: 14px; position: relative;
+      font-family: var(--sans); font-weight: 300;
+    }
+    .screen-btn {
+      background: #551C25; color: #D7D2CB;
+      font-family: var(--sans); font-size: 8px; font-weight: 600;
+      letter-spacing: 0.05em; padding: 7px 14px;
+      border-radius: 5px; display: inline-block; position: relative;
+    }
+  </style>
 </head>
 <body>
 
@@ -151,6 +346,30 @@
     </div>
   </section>
 
+  <!-- PHOTOGRAPHY -->
+  <section class="photography-section">
+    <div class="container">
+      <div class="photo-layout">
+        <div class="photo-text">
+          <h2>Fotografía</h2>
+          <p>Se utilizará fotografía de negocios con enfoque aspiracional, mostrando contextos profesionales cuidados, ambientes sofisticados y situaciones que proyectan progreso. Estas imágenes no documentan: inspiran. Refuerzan la idea de crecimiento, liderazgo y proyección, consolidando una percepción premium coherente con la identidad de la marca.</p>
+        </div>
+        <div class="photo-mosaic">
+          <div class="photo-row-top">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=85&auto=format&fit=crop" alt="Corporate architecture" />
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=85&auto=format&fit=crop" alt="City skyline" style="filter: grayscale(0.65);" />
+          </div>
+          <div class="photo-row-bottom">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&q=85&auto=format&fit=crop" alt="Businessman" style="filter: grayscale(1);" />
+            <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=300&q=85&auto=format&fit=crop" alt="Architecture" />
+            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&q=85&auto=format&fit=crop" alt="Business" />
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=300&q=85&auto=format&fit=crop" alt="Modern building" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOUNDERS -->
   <section class="founders" id="founders">
     <div class="container">
@@ -183,6 +402,78 @@
       </div>
     </div>
   </section>
+
+  <!-- BRAND APPLICATIONS -->
+  <!-- Page 27 — Laptop mockup -->
+  <div class="brand-apps-page brand-apps-page--light">
+    <span class="brand-apps-label">04. Aplicaciones</span>
+    <span class="brand-apps-year">©2026</span>
+
+    <div class="device-laptop">
+      <div class="device-laptop__lid">
+        <div class="device-laptop__bezel">
+          <div class="device-laptop__screen">
+            <div class="screen-nav">
+              <span class="screen-logo">BLACKSCALE</span>
+              <div class="screen-links">
+                <span>Services</span>
+                <span>Why Us</span>
+                <span>Process</span>
+              </div>
+            </div>
+            <div class="screen-hero-laptop">
+              <h2>¿Quiénes<br/>somos?</h2>
+              <p>Creemos que el crecimiento estructurado y enfocado es el camino. Trabajamos con empresas que priorizan el talento, la construcción de estructuras sólidas y la aplicación de resultados medibles en el tiempo, con visión clara, siempre en el proceso, siempre en la ejecución.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="device-laptop__base"></div>
+      <div class="device-laptop__foot"></div>
+    </div>
+
+    <div class="brand-apps-footer">
+      <span>
+        <svg width="16" height="13" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="2" y="40" font-family="serif" font-size="46" font-weight="600" fill="#aaa" opacity="0.55">B</text><text x="20" y="40" font-family="serif" font-size="46" font-weight="600" fill="#aaa">B</text></svg>
+        Manual de marca v4.0
+      </span>
+      <span>27</span>
+    </div>
+  </div>
+
+  <!-- Page 28 — Phone mockup -->
+  <div class="brand-apps-page brand-apps-page--lighter">
+    <span class="brand-apps-label">04. Aplicaciones</span>
+    <span class="brand-apps-year">©2026</span>
+
+    <div class="device-phone">
+      <div class="device-phone__screen">
+        <div class="screen-status">
+          <span>19:02</span>
+          <span>BLACKSCALE &nbsp; ●●●● LTE ■</span>
+        </div>
+        <div class="screen-nav-mobile">
+          <span class="screen-logo-sm">BLACKSCALE</span>
+          <div class="screen-burger">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="screen-hero-phone">
+          <h3>Escalamos su<br/>crecimiento con<br/>precisión y<br/>profesionalismo.</h3>
+          <p>Somos la agencia que entiende cómo hacer crecer su negocio con estrategia, rigor y visión clara. Resultados sólidos, crecimiento sin complicaciones.</p>
+          <span class="screen-btn">Trabaja con nosotros</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-apps-footer">
+      <span>
+        <svg width="16" height="13" viewBox="0 0 62 46" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="2" y="40" font-family="serif" font-size="46" font-weight="600" fill="#aaa" opacity="0.55">B</text><text x="20" y="40" font-family="serif" font-size="46" font-weight="600" fill="#aaa">B</text></svg>
+        Manual de marca v4.0
+      </span>
+      <span>28</span>
+    </div>
+  </div>
 
   <!-- CTA BAND -->
   <section class="cta-band">
