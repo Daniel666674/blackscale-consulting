@@ -585,6 +585,11 @@
     });
 
     try { localStorage.setItem('bs_lang', lang); } catch (e) {}
+
+    // Re-render calligraphic glyphs after innerHTML is updated.
+    if (typeof window.applyCalligraphy === 'function') {
+      window.applyCalligraphy();
+    }
   }
 
   // Determine saved language
