@@ -1563,3 +1563,57 @@ a { color: inherit; text-decoration: none; }
 }
 .mobile-lang .lang-btn { font-size: 13px; padding: 6px 8px; }
 .mobile-lang .lang-divider { font-size: 13px; }
+
+/* =========================================
+   CALLIGRAPHY GLYPH RENDERER
+   ========================================= */
+
+/* Wrapper — lays glyphs out in a horizontal flow */
+.calig {
+  display: inline-flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+/* Individual glyph image */
+.calig__glyph {
+  display: inline-block;
+  height: 0.82em;   /* scales with heading font-size */
+  width: auto;
+  vertical-align: bottom;
+}
+
+/* Word space between glyph runs */
+.calig__space {
+  display: inline-block;
+  width: 0.28em;
+}
+
+/* Fallback for unmapped characters (period, comma, accents…) */
+.calig__fallback {
+  display: inline-block;
+  font-style: italic;
+  font-family: var(--serif);
+  vertical-align: bottom;
+  line-height: 0.82;
+}
+
+/* ── Color modes ── */
+
+/* Dark mode: white glyphs on dark/burgundy backgrounds (default) */
+.calig--dark .calig__glyph {
+  filter: brightness(0) invert(1);
+}
+.calig--dark .calig__fallback {
+  color: var(--white);
+}
+
+/* Light mode: native dark-red glyphs on light/cream backgrounds */
+.calig--light .calig__glyph {
+  /* native fill #4c222a — no filter needed */
+}
+.calig--light .calig__fallback {
+  color: var(--burgundy);
+}
