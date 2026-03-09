@@ -66,7 +66,7 @@
   <section class="services" id="services" style="padding: 100px 0;">
     <div class="container">
       <div class="services__grid services__grid--full">
-        <div class="card">
+        <div class="card" id="demand">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18M3 9h18M3 15h12M3 21h8"/></svg>
           </div>
@@ -79,7 +79,7 @@
             <li style="font-size: 13px; color: var(--muted-light); display: flex; gap: 10px; align-items: center;"><span style="color: var(--burgundy-mid);">→</span> <span data-i18n="svc.demand.li4">Lead scoring & nurturing</span></li>
           </ul>
         </div>
-        <div class="card">
+        <div class="card" id="revops">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
           </div>
@@ -92,7 +92,7 @@
             <li style="font-size: 13px; color: var(--muted-light); display: flex; gap: 10px; align-items: center;"><span style="color: var(--burgundy-mid);">→</span> <span data-i18n="svc.revops.li4">Cross-team alignment frameworks</span></li>
           </ul>
         </div>
-        <div class="card">
+        <div class="card" id="sales">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
@@ -105,7 +105,7 @@
             <li style="font-size: 13px; color: var(--muted-light); display: flex; gap: 10px; align-items: center;"><span style="color: var(--burgundy-mid);">→</span> <span data-i18n="svc.sales.li4">Rep training & onboarding</span></li>
           </ul>
         </div>
-        <div class="card">
+        <div class="card" id="abm">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
@@ -118,7 +118,7 @@
             <li style="font-size: 13px; color: var(--muted-light); display: flex; gap: 10px; align-items: center;"><span style="color: var(--burgundy-mid);">→</span> <span data-i18n="svc.abm.li4">Sales & marketing coordination</span></li>
           </ul>
         </div>
-        <div class="card">
+        <div class="card" id="gtm">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
@@ -131,7 +131,7 @@
             <li style="font-size: 13px; color: var(--muted-light); display: flex; gap: 10px; align-items: center;"><span style="color: var(--burgundy-mid);">→</span> <span data-i18n="svc.gtm.li4">Launch execution planning</span></li>
           </ul>
         </div>
-        <div class="card">
+        <div class="card" id="analytics">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
           </div>
@@ -244,12 +244,12 @@
         <div class="footer__col">
           <h4 class="footer__col-title" data-i18n="footer.col.services">Services</h4>
           <ul class="footer__col-links">
-            <li><a href="services.html" data-i18n="footer.svc.demand">Demand Generation</a></li>
-            <li><a href="services.html" data-i18n="footer.svc.revops">Revenue Operations</a></li>
-            <li><a href="services.html" data-i18n="footer.svc.sales">Sales Enablement</a></li>
-            <li><a href="services.html" data-i18n="footer.svc.abm">Account-Based Marketing</a></li>
-            <li><a href="services.html" data-i18n="footer.svc.gtm">Go-to-Market Strategy</a></li>
-            <li><a href="services.html" data-i18n="footer.svc.analytics">Performance Analytics</a></li>
+            <li><a href="services.html#demand" data-i18n="footer.svc.demand">Demand Generation</a></li>
+            <li><a href="services.html#revops" data-i18n="footer.svc.revops">Revenue Operations</a></li>
+            <li><a href="services.html#sales" data-i18n="footer.svc.sales">Sales Enablement</a></li>
+            <li><a href="services.html#abm" data-i18n="footer.svc.abm">Account-Based Marketing</a></li>
+            <li><a href="services.html#gtm" data-i18n="footer.svc.gtm">Go-to-Market Strategy</a></li>
+            <li><a href="services.html#analytics" data-i18n="footer.svc.analytics">Performance Analytics</a></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -258,7 +258,7 @@
             <li><a href="why-us.html" data-i18n="footer.co.why">Why Blackscale</a></li>
             <li><a href="process.html" data-i18n="footer.co.process">Our Process</a></li>
             <li><a href="why-us.html#founders" data-i18n="footer.co.team">The Team</a></li>
-            <li><a href="why-us.html#success-cases" data-i18n="footer.co.success">Success Cases</a></li>
+            <li><a href="why-us.html" data-i18n="footer.co.success">Success Cases</a></li>
             <li><a href="contact.html" data-i18n="footer.co.careers">Careers</a></li>
             <li><a href="contact.html" data-i18n="footer.co.contact">Contact</a></li>
           </ul>
@@ -266,12 +266,12 @@
         <div class="footer__col">
           <h4 class="footer__col-title" data-i18n="footer.col.legal">Legal &amp; Policies</h4>
           <ul class="footer__col-links">
-            <li><a href="#" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
-            <li><a href="#" data-i18n="footer.legal.data">Data Management</a></li>
-            <li><a href="#" data-i18n="footer.legal.terms">Terms of Service</a></li>
-            <li><a href="#" data-i18n="footer.legal.cookie">Cookie Policy</a></li>
-            <li><a href="#" data-i18n="footer.legal.gdpr">GDPR Compliance</a></li>
-            <li><a href="#" data-i18n="footer.legal.access">Accessibility</a></li>
+            <li><a href="legal.html#privacy" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
+            <li><a href="legal.html#data-management" data-i18n="footer.legal.data">Data Management</a></li>
+            <li><a href="legal.html#terms" data-i18n="footer.legal.terms">Terms of Service</a></li>
+            <li><a href="legal.html#cookies" data-i18n="footer.legal.cookie">Cookie Policy</a></li>
+            <li><a href="legal.html#gdpr" data-i18n="footer.legal.gdpr">GDPR Compliance</a></li>
+            <li><a href="legal.html#accessibility" data-i18n="footer.legal.access">Accessibility</a></li>
           </ul>
         </div>
       </div>
@@ -280,9 +280,9 @@
       <div class="container footer__bottom-inner">
         <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 Blackscale Consulting. All rights reserved.</p>
         <div class="footer__bottom-links">
-          <a href="#" data-i18n="footer.bottom.privacy">Privacy</a>
-          <a href="#" data-i18n="footer.bottom.terms">Terms</a>
-          <a href="#" data-i18n="footer.bottom.cookies">Cookies</a>
+          <a href="legal.html#privacy" data-i18n="footer.bottom.privacy">Privacy</a>
+          <a href="legal.html#terms" data-i18n="footer.bottom.terms">Terms</a>
+          <a href="legal.html#cookies" data-i18n="footer.bottom.cookies">Cookies</a>
         </div>
       </div>
     </div>
