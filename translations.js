@@ -96,11 +96,11 @@
       'breadcrumb.contact': 'Get in Touch',
 
       // INDEX — HERO
-      'hero.headline': 'Marketing that<br /><em>moves the needle.</em>',
-      'hero.sub': 'Blackscale Consulting helps B2B companies generate high-quality leads, sharpen their sales pipeline, and unlock sustainable revenue growth — with strategies built around real data and real outcomes.',
-      'hero.stat1': 'Average pipeline growth',
-      'hero.stat2': 'Reduction in sales cycle',
-      'hero.stat3': 'Focus on B2B revenue',
+      'hero.headline': 'Marketing designed to<br /><em>scale B2B businesses.</em>',
+      'hero.sub': 'At Blackscale Consulting we help B2B companies generate high-quality leads and strengthen their sales pipeline through data-driven marketing strategies, digital advertising optimization, and sales enablement to convert more opportunities into clients.',
+      'hero.tagline': 'Schedule your free consultation. 🎯',
+      'hero.bullet1': 'LinkedIn Ads specialization',
+      'hero.bullet2': 'Experience operating in highly competitive markets',
 
       // INDEX — SERVICES PREVIEW
       'idx.svc.heading': 'End-to-end B2B growth,<br /><em>done right.</em>',
@@ -376,11 +376,11 @@
       'breadcrumb.contact': 'Cont\u00e1ctanos',
 
       // INDEX — HERO
-      'hero.headline': 'Marketing que<br /><em>mueve la aguja.</em>',
-      'hero.sub': 'Blackscale Consulting ayuda a empresas B2B a generar leads de alta calidad, fortalecer su pipeline de ventas y desbloquear un crecimiento de ingresos sostenible \u2014 con estrategias basadas en datos reales y resultados concretos.',
-      'hero.stat1': 'Crecimiento promedio del pipeline',
-      'hero.stat2': 'Reducci\u00f3n del ciclo de ventas',
-      'hero.stat3': 'Enfoque en ingresos B2B',
+      'hero.headline': 'Marketing dise\u00f1ado para<br /><em>escalar negocios B2B.</em>',
+      'hero.sub': 'En Blackscale Consulting ayudamos a empresas B2B a generar leads de alta calidad y fortalecer su pipeline de ventas mediante estrategias de marketing basadas en datos, optimizaci\u00f3n de pauta digital y sales enablement para convertir m\u00e1s oportunidades en clientes.',
+      'hero.tagline': 'Agenda tu consultor\u00eda gratuita. \ud83c\udfaf',
+      'hero.bullet1': 'Especializaci\u00f3n en LinkedIn Ads',
+      'hero.bullet2': 'Experiencia operando en mercados altamente competitivos',
 
       // INDEX — SERVICES PREVIEW
       'idx.svc.heading': 'Crecimiento B2B integral,<br /><em>hecho bien.</em>',
