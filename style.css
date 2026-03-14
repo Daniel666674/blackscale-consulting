@@ -472,48 +472,60 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
 }
 
-.hero__tagline {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--cream);
-  letter-spacing: 0.02em;
-}
-
-.hero__bullets {
+.hero__stats {
+  display: flex;
+  align-items: center;
+  gap: 48px;
   margin-top: 56px;
   background: rgba(28, 27, 24, 0.85);
   border: 1px solid var(--border);
   border-top: 2px solid var(--burgundy);
   border-radius: var(--radius-lg);
-  padding: 28px 48px;
+  padding: 32px 56px;
+  flex-wrap: wrap;
+  justify-content: center;
   backdrop-filter: blur(8px);
-  text-align: left;
 }
 
-.hero__bullets ul {
-  list-style: none;
+.stat {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-}
-
-.hero__bullets li {
-  display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--cream-light);
-  letter-spacing: 0.02em;
+  gap: 6px;
 }
 
-.hero__bullets li::before {
-  content: '';
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--burgundy-mid);
-  flex-shrink: 0;
+.stat__num {
+  font-family: var(--serif);
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--cream);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.stat__label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.stat__text {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cream-light);
+  text-align: center;
+  max-width: 180px;
+  line-height: 1.4;
+}
+
+.stat__divider {
+  width: 1px;
+  height: 44px;
+  background: var(--border);
 }
 
 /* =========================================
@@ -1479,7 +1491,8 @@ a { color: inherit; text-decoration: none; }
   .step:first-child { border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
   .step:last-child  { border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
   .cta-band__inner { flex-direction: column; text-align: center; }
-  .hero__bullets { padding: 20px 28px; }
+  .hero__stats { padding: 24px 28px; gap: 24px; }
+  .stat__divider { display: none; }
   .form-row { grid-template-columns: 1fr; }
   .metric-card--2, .metric-card--3 { margin-left: 0; }
   .founder-card { flex-direction: column; }
