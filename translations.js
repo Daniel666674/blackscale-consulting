@@ -85,7 +85,7 @@
       'btn.view_all': 'View All Services',
       'btn.learn_more': 'Learn More About Us',
       'btn.full_process': 'See the Full Process',
-      'btn.strategy_call': 'Book a Strategy Call',
+      'btn.strategy_call': 'Schedule Your Free Consultation',
       'btn.explore': 'Explore Services',
 
       // BREADCRUMBS
@@ -98,9 +98,8 @@
       // INDEX — HERO
       'hero.headline': 'Marketing designed to<br /><em>scale B2B businesses.</em>',
       'hero.sub': 'At Blackscale Consulting we help B2B companies generate high-quality leads and strengthen their sales pipeline through data-driven marketing strategies, digital advertising optimization, and sales enablement to convert more opportunities into clients.',
-      'hero.tagline': 'Schedule your free consultation. 🎯',
-      'hero.bullet1': 'LinkedIn Ads specialization',
-      'hero.bullet2': 'Experience operating in highly competitive markets',
+      'hero.stat1': 'LinkedIn Ads Specialization',
+      'hero.stat2': 'Experience in Highly Competitive Markets',
 
       // INDEX — SERVICES PREVIEW
       'idx.svc.heading': 'End-to-end B2B growth,<br /><em>done right.</em>',
@@ -365,7 +364,7 @@
       'btn.view_all': 'Ver todos los Servicios',
       'btn.learn_more': 'Conoce m\u00e1s sobre nosotros',
       'btn.full_process': 'Ver el Proceso Completo',
-      'btn.strategy_call': 'Reservar una Llamada de Estrategia',
+      'btn.strategy_call': 'Agenda tu Consultor\u00eda Gratuita',
       'btn.explore': 'Explorar Servicios',
 
       // BREADCRUMBS
@@ -378,9 +377,8 @@
       // INDEX — HERO
       'hero.headline': 'Marketing dise\u00f1ado para<br /><em>escalar negocios B2B.</em>',
       'hero.sub': 'En Blackscale Consulting ayudamos a empresas B2B a generar leads de alta calidad y fortalecer su pipeline de ventas mediante estrategias de marketing basadas en datos, optimizaci\u00f3n de pauta digital y sales enablement para convertir m\u00e1s oportunidades en clientes.',
-      'hero.tagline': 'Agenda tu consultor\u00eda gratuita. \ud83c\udfaf',
-      'hero.bullet1': 'Especializaci\u00f3n en LinkedIn Ads',
-      'hero.bullet2': 'Experiencia operando en mercados altamente competitivos',
+      'hero.stat1': 'Especializaci\u00f3n en LinkedIn Ads',
+      'hero.stat2': 'Experiencia en mercados altamente competitivos',
 
       // INDEX — SERVICES PREVIEW
       'idx.svc.heading': 'Crecimiento B2B integral,<br /><em>hecho bien.</em>',
