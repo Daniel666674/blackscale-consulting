@@ -8,8 +8,8 @@
       'nav.cta': 'Get in Touch',
 
       // FOOTER CTA STRIP
-      'footer.cta.h': 'Ready to scale your revenue?',
-      'footer.cta.p': "Let's talk about your growth goals. No pitch, just strategy.",
+      'footer.cta.h': 'Your revenue targets don\'t wait.',
+      'footer.cta.p': '30 minutes with a founder. No pitch — just a clear diagnosis of what\'s blocking your growth.',
       'footer.contact_us': 'Contact Us',
 
       // FOOTER BRAND
@@ -96,8 +96,8 @@
       'breadcrumb.contact': 'Get in Touch',
 
       // INDEX — HERO
-      'hero.headline': 'Marketing designed to<br /><em>scale B2B businesses.</em>',
-      'hero.sub': 'At Blackscale Consulting we help B2B companies generate high-quality leads and strengthen their sales pipeline through data-driven marketing strategies, digital advertising optimization, and sales enablement to convert more opportunities into clients.',
+      'hero.headline': 'Most B2B marketing generates leads.<br /><em>We generate revenue.</em>',
+      'hero.sub': 'If your pipeline looks healthy but your revenue targets don\'t, you don\'t have a volume problem — you have a conversion problem. We close the gaps between marketing, sales, and closed revenue.',
       'hero.stat1': 'LinkedIn Ads Specialization',
       'hero.stat2': 'Experience in Highly Competitive Markets',
 
@@ -151,8 +151,8 @@
       'idx.process.s4.p': 'We measure, learn, and iterate. Monthly reporting keeps leadership informed and the strategy continuously improving.',
 
       // SHARED CONTACT SECTION HEADER
-      'contact.heading': 'Start the<br /><em>conversation.</em>',
-      'contact.sub': "Tell us about your business and goals. We'll follow up within one business day to book your free strategy call.",
+      'contact.heading': 'Let\'s talk<br /><em>revenue.</em>',
+      'contact.sub': 'Tell us where growth is stalling. A founder will follow up within one business day — no account reps, no runaround.',
 
       // SERVICES PAGE
       'svc.page.tag': 'What We Do',
@@ -287,8 +287,8 @@
       'nav.cta': 'Cont\u00e1ctanos',
 
       // FOOTER CTA STRIP
-      'footer.cta.h': '\u00bfListo para escalar tus ingresos?',
-      'footer.cta.p': 'Hablemos de tus metas de crecimiento. Sin discursos de venta, solo estrategia.',
+      'footer.cta.h': 'Tus metas de ingresos no esperan.',
+      'footer.cta.p': '30 minutos con un fundador. Sin discurso de ventas \u2014 solo un diagn\u00f3stico claro de lo que est\u00e1 bloqueando tu crecimiento.',
       'footer.contact_us': 'Cont\u00e1ctanos',
 
       // FOOTER BRAND
@@ -375,8 +375,8 @@
       'breadcrumb.contact': 'Cont\u00e1ctanos',
 
       // INDEX — HERO
-      'hero.headline': 'Marketing dise\u00f1ado para<br /><em>escalar negocios B2B.</em>',
-      'hero.sub': 'En Blackscale Consulting ayudamos a empresas B2B a generar leads de alta calidad y fortalecer su pipeline de ventas mediante estrategias de marketing basadas en datos, optimizaci\u00f3n de pauta digital y sales enablement para convertir m\u00e1s oportunidades en clientes.',
+      'hero.headline': 'La mayor\u00eda del marketing B2B genera leads.<br /><em>Nosotros generamos ingresos.</em>',
+      'hero.sub': 'Si tu pipeline parece saludable pero tus metas de ingresos no, no tienes un problema de volumen \u2014 tienes un problema de conversi\u00f3n. Cerramos las brechas entre marketing, ventas e ingresos reales.',
       'hero.stat1': 'Especializaci\u00f3n en LinkedIn Ads',
       'hero.stat2': 'Experiencia en mercados altamente competitivos',
 
@@ -430,8 +430,8 @@
       'idx.process.s4.p': 'Medimos, aprendemos e iteramos. Los reportes mensuales mantienen informado al liderazgo y la estrategia en constante mejora.',
 
       // SHARED CONTACT SECTION HEADER
-      'contact.heading': 'Inicia la<br /><em>conversaci\u00f3n.</em>',
-      'contact.sub': 'Cu\u00e9ntanos sobre tu negocio y tus metas. Te daremos seguimiento en un d\u00eda h\u00e1bil para agendar tu llamada de estrategia gratuita.',
+      'contact.heading': 'Hablemos de<br /><em>ingresos.</em>',
+      'contact.sub': 'Cu\u00e9ntanos d\u00f3nde el crecimiento est\u00e1 detenido. Un fundador te dar\u00e1 seguimiento en un d\u00eda h\u00e1bil \u2014 sin intermediarios, sin rodeos.',
 
       // SERVICES PAGE
       'svc.page.tag': 'Lo que hacemos',
