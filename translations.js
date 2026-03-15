@@ -82,7 +82,7 @@
       'tag.what_to_expect': 'What to Expect',
 
       // COMMON BUTTONS
-      'btn.view_all': 'View All Services',
+      'btn.view_all': 'Learn more about what we do',
       'btn.learn_more': 'Learn More About Us',
       'btn.full_process': 'See the Full Process',
       'btn.strategy_call': 'Book a Strategy Call',
@@ -366,7 +366,7 @@
       'tag.what_to_expect': 'Qu\u00e9 esperar',
 
       // COMMON BUTTONS
-      'btn.view_all': 'Ver todos los Servicios',
+      'btn.view_all': 'Conoce m\u00e1s a detalle lo que hacemos',
       'btn.learn_more': 'Conoce m\u00e1s sobre nosotros',
       'btn.full_process': 'Ver el Proceso Completo',
       'btn.strategy_call': 'Reservar una Llamada de Estrategia',
