@@ -103,22 +103,22 @@
       'hero.stat3': 'Focus on B2B revenue',
 
       // INDEX — SERVICES PREVIEW
-      'idx.svc.heading': 'End-to-end B2B growth,<br /><em>done right.</em>',
-      'idx.svc.sub': 'From demand generation to deal closure, we cover every lever that drives revenue.',
+      'idx.svc.heading': 'Results you can<br /><em>achieve.</em>',
+      'idx.svc.sub': 'From predictable pipeline to faster deal closure, every engagement is built around outcomes that matter to your business.',
 
       // SERVICE CARD HEADINGS & SHORT DESCRIPTIONS (index preview)
-      'svc.demand.h': 'Demand Generation',
-      'svc.demand.p': 'Build repeatable pipelines with targeted campaigns, content strategy, and multi-channel outreach that brings the right buyers to your door.',
-      'svc.revops.h': 'Revenue Operations',
-      'svc.revops.p': 'Align your sales, marketing, and customer success teams around unified data, optimized processes, and the tools that make closing easier.',
-      'svc.sales.h': 'Sales Enablement',
-      'svc.sales.p': 'Give your sales team the playbooks, messaging frameworks, and competitive intelligence they need to win more deals, faster.',
-      'svc.abm.h': 'Account-Based Marketing',
-      'svc.abm.p': 'Identify and engage your ideal accounts with precision targeting, personalized content, and coordinated campaigns designed to open doors.',
-      'svc.gtm.h': 'Go-to-Market Strategy',
-      'svc.gtm.p': 'Launch new products or enter new markets with confidence. We build GTM plans grounded in competitive research, ICP definition, and channel strategy.',
-      'svc.analytics.h': 'Performance Analytics',
-      'svc.analytics.p': "Translate marketing data into clear revenue attribution. We build dashboards and reporting systems so you always know what's working.",
+      'svc.demand.h': 'Predictable Commercial Pipeline',
+      'svc.demand.p': 'We build demand generation systems that constantly feed your pipeline with qualified opportunities.',
+      'svc.revops.h': 'More Meetings with Decision-Makers',
+      'svc.revops.p': 'We activate campaigns and prospecting processes that connect your company directly with the right decision-makers.',
+      'svc.sales.h': 'Real Alignment Between Marketing and Sales',
+      'svc.sales.p': 'We integrate both teams under one strategy to transform leads into real business opportunities.',
+      'svc.abm.h': 'Faster Deal Closing',
+      'svc.abm.p': 'We optimize the commercial process with better messaging, processes, and follow-up to shorten sales cycles.',
+      'svc.gtm.h': 'Expansion into New Markets',
+      'svc.gtm.p': 'We design go-to-market strategies that allow you to launch products or enter new markets with greater probability of success.',
+      'svc.analytics.h': 'Data-Driven Growth',
+      'svc.analytics.p': 'Every action is measured and constantly optimized to scale revenue sustainably.',
 
       // INDEX — WHY US PREVIEW
       'idx.why.heading': "We don't do<br /><em>vanity metrics.</em>",
@@ -387,22 +387,22 @@
       'hero.stat3': 'Enfoque en ingresos B2B',
 
       // INDEX — SERVICES PREVIEW
-      'idx.svc.heading': 'Crecimiento B2B integral,<br /><em>hecho bien.</em>',
-      'idx.svc.sub': 'Desde la generaci\u00f3n de demanda hasta el cierre de negocios, cubrimos cada palanca que impulsa los ingresos.',
+      'idx.svc.heading': 'Resultados que puedes<br /><em>obtener.</em>',
+      'idx.svc.sub': 'Desde un pipeline predecible hasta el cierre m\u00e1s r\u00e1pido de negocios, cada compromiso est\u00e1 construido en torno a resultados que importan para tu negocio.',
 
       // SERVICE CARD HEADINGS & SHORT DESCRIPTIONS
-      'svc.demand.h': 'Generaci\u00f3n de Demanda',
-      'svc.demand.p': 'Construye pipelines repetibles con campa\u00f1as dirigidas, estrategia de contenido y alcance multicanal que atrae a los compradores correctos.',
-      'svc.revops.h': 'Operaciones de Ingresos',
-      'svc.revops.p': 'Alinea tus equipos de ventas, marketing y \u00e9xito del cliente en torno a datos unificados, procesos optimizados y las herramientas que facilitan el cierre.',
-      'svc.sales.h': 'Habilitaci\u00f3n de Ventas',
-      'svc.sales.p': 'Equipa a tu equipo de ventas con los playbooks, marcos de mensajes e inteligencia competitiva que necesitan para cerrar m\u00e1s negocios, m\u00e1s r\u00e1pido.',
-      'svc.abm.h': 'Marketing Basado en Cuentas',
-      'svc.abm.p': 'Identifica y conecta con tus cuentas ideales mediante segmentaci\u00f3n precisa, contenido personalizado y campa\u00f1as coordinadas dise\u00f1adas para abrir puertas.',
-      'svc.gtm.h': 'Estrategia Go-to-Market',
-      'svc.gtm.p': 'Lanza nuevos productos o entra en nuevos mercados con confianza. Construimos planes GTM basados en investigaci\u00f3n competitiva, definici\u00f3n de ICP y estrategia de canales.',
-      'svc.analytics.h': 'Anal\u00edtica de Rendimiento',
-      'svc.analytics.p': 'Convierte los datos de marketing en atribuci\u00f3n de ingresos clara. Construimos dashboards y sistemas de reporte para que siempre sepas qu\u00e9 est\u00e1 funcionando.',
+      'svc.demand.h': 'Pipeline Comercial Predecible',
+      'svc.demand.p': 'Construimos sistemas de generaci\u00f3n de demanda que alimentan constantemente tu pipeline con oportunidades calificadas.',
+      'svc.revops.h': 'M\u00e1s Reuniones con Decisores',
+      'svc.revops.p': 'Activamos campa\u00f1as y procesos de prospecci\u00f3n que conectan tu empresa directamente con los tomadores de decisi\u00f3n correctos.',
+      'svc.sales.h': 'Alineaci\u00f3n Real entre Marketing y Ventas',
+      'svc.sales.p': 'Integramos ambos equipos bajo una misma estrategia para transformar leads en oportunidades reales de negocio.',
+      'svc.abm.h': 'Mayor Velocidad de Cierre',
+      'svc.abm.p': 'Optimizamos el proceso comercial con mejores mensajes, procesos y seguimiento para acortar ciclos de venta.',
+      'svc.gtm.h': 'Expansi\u00f3n a Nuevos Mercados',
+      'svc.gtm.p': 'Dise\u00f1amos estrategias go-to-market que permiten lanzar productos o entrar en nuevos mercados con mayor probabilidad de \u00e9xito.',
+      'svc.analytics.h': 'Crecimiento Basado en Datos',
+      'svc.analytics.p': 'Cada acci\u00f3n se mide y optimiza constantemente para escalar los ingresos de forma sostenida.',
 
       // INDEX — WHY US PREVIEW
       'idx.why.heading': 'No nos enfocamos en<br /><em>m\u00e9tricas de vanidad.</em>',
