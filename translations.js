@@ -2,7 +2,7 @@
   var T = {
     en: {
       // NAV
-      'nav.services': 'Services',
+      'nav.services': 'What We Do',
       'nav.why': 'Why Us',
       'nav.process': 'Process',
       'nav.cta': 'Get in Touch',
@@ -285,7 +285,7 @@
 
     es: {
       // NAV
-      'nav.services': 'Servicios',
+      'nav.services': 'Qu\u00e9 hacemos',
       'nav.why': 'Por qu\u00e9 nosotros',
       'nav.process': 'Proceso',
       'nav.cta': 'Cont\u00e1ctanos',
