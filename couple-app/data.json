@@ -1,5 +1,18 @@
 {
   "tasks": [],
   "events": [],
-  "users": []
+  "users": [
+    {
+      "id": "1",
+      "username": "alex",
+      "password": "$2a$10$Eh05ONhCP4tVKf4eMcLHQ.IzvK8v8w9OUPm5WOt60/xQGfUnT3C76",
+      "displayName": "Alex"
+    },
+    {
+      "id": "2",
+      "username": "sam",
+      "password": "$2a$10$xJvYi0Iyq09Fn0GymACTR.8rqpTOOaTWY2LkXd1rIkBiNGvHP6CSi",
+      "displayName": "Sam"
+    }
+  ]
 }
