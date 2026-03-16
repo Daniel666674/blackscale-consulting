@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Space ✦</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ LOGIN SCREEN ══════════════════════════════ -->
+  <div id="login-screen" class="screen active">
+    <div class="login-bg">
+      <div class="login-blob blob1"></div>
+      <div class="login-blob blob2"></div>
+      <div class="login-blob blob3"></div>
+    </div>
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-icon">✦</div>
+        <h1 class="login-title">Our Space</h1>
+        <p class="login-subtitle">Your shared life, organised together</p>
+      </div>
+      <form id="login-form" class="login-form" novalidate>
+        <div class="form-group">
+          <label for="login-username">Username</label>
+          <input
+            type="text"
+            id="login-username"
+            placeholder="alex or sam"
+            autocomplete="username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <div class="password-wrap">
+            <input
+              type="password"
+              id="login-password"
+              placeholder="••••••••"
+              autocomplete="current-password"
+              required
+            />
+            <button type="button" class="show-pwd" id="toggle-pwd" aria-label="Toggle password visibility">
+              <span class="eye-icon" id="eye-icon">👁</span>
+            </button>
+          </div>
+        </div>
+        <p id="login-error" class="error-msg hidden"></p>
+        <button type="submit" class="btn btn-primary btn-full" id="login-btn">
+          Sign in
+        </button>
+      </form>
+      <p class="login-hint">Default: <strong>alex</strong> / <strong>alex123</strong> &nbsp;or&nbsp; <strong>sam</strong> / <strong>sam123</strong></p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ MAIN APP ═════════════════════════════════ -->
+  <div id="app-screen" class="screen">
+
+    <!-- ── Top bar ── -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="app-logo">✦</span>
+        <span class="app-name">Our Space</span>
+      </div>
+      <div class="topbar-center">
+        <span id="today-display" class="today-label"></span>
+      </div>
+      <div class="topbar-right">
+        <div class="user-pill">
+          <span class="user-avatar" id="user-avatar"></span>
+          <span id="user-display-name" class="user-name"></span>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="logout-btn">Sign out</button>
+      </div>
+    </header>
+
+    <!-- ── Tabs ── -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="tasks">
+        <span class="tab-icon">✓</span> Tasks
+      </button>
+      <button class="tab-btn" data-tab="schedule">
+        <span class="tab-icon">◷</span> Schedule
+      </button>
+    </nav>
+
+    <!-- ── Main content ── -->
+    <main class="main-content">
+
+      <!-- ─────────────────── TASKS TAB ─────────────────────────────────── -->
+      <section id="tab-tasks" class="tab-panel active">
+
+        <!-- Add task form -->
+        <div class="card add-card" id="add-task-card">
+          <div class="card-header" id="add-task-toggle">
+            <h2 class="card-title">
+              <span class="card-icon">+</span> Add a task
+            </h2>
+            <span class="collapse-arrow" id="task-arrow">▾</span>
+          </div>
+          <div class="card-body" id="add-task-body">
+            <form id="add-task-form" novalidate>
+              <div class="form-row">
+                <div class="form-group flex-2">
+                  <label for="task-title">Title <span class="req">*</span></label>
+                  <input type="text" id="task-title" placeholder="What needs to be done?" required />
+                </div>
+                <div class="form-group">
+                  <label for="task-priority">Priority</label>
+                  <select id="task-priority">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group flex-2">
+                  <label for="task-desc">Description <span class="optional">(optional)</span></label>
+                  <input type="text" id="task-desc" placeholder="Any details?" />
+                </div>
+                <div class="form-group">
+                  <label for="task-due">Due date <span class="optional">(optional)</span></label>
+                  <input type="date" id="task-due" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="task-assigned">Assign to</label>
+                  <select id="task-assigned">
+                    <option value="me">Me</option>
+                    <option value="partner">Partner</option>
+                    <option value="both" selected>Both of us</option>
+                  </select>
+                </div>
+                <div class="form-group flex-2 form-actions">
+                  <p id="task-form-error" class="error-msg hidden"></p>
+                  <button type="submit" class="btn btn-primary">Add Task</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar">
+          <span class="filter-label">Show:</span>
+          <div class="filter-pills" id="task-filters">
+            <button class="filter-pill active" data-filter="all">All</button>
+            <button class="filter-pill" data-filter="mine">Mine</button>
+            <button class="filter-pill" data-filter="partner">Partner's</button>
+            <button class="filter-pill" data-filter="pending">Pending</button>
+            <button class="filter-pill" data-filter="completed">Completed</button>
+          </div>
+        </div>
+
+        <!-- Task list -->
+        <div id="task-list" class="item-list">
+          <div class="empty-state" id="tasks-empty">
+            <div class="empty-icon">✓</div>
+            <p>No tasks yet — add one above!</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ─────────────────── SCHEDULE TAB ──────────────────────────────── -->
+      <section id="tab-schedule" class="tab-panel">
+
+        <!-- Add event form -->
+        <div class="card add-card" id="add-event-card">
+          <div class="card-header" id="add-event-toggle">
+            <h2 class="card-title">
+              <span class="card-icon">+</span> Add an event
+            </h2>
+            <span class="collapse-arrow" id="event-arrow">▾</span>
+          </div>
+          <div class="card-body" id="add-event-body">
+            <form id="add-event-form" novalidate>
+              <div class="form-row">
+                <div class="form-group flex-2">
+                  <label for="event-title">Title <span class="req">*</span></label>
+                  <input type="text" id="event-title" placeholder="What's happening?" required />
+                </div>
+                <div class="form-group">
+                  <label for="event-date">Date <span class="req">*</span></label>
+                  <input type="date" id="event-date" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="event-time">Time <span class="optional">(optional)</span></label>
+                  <input type="time" id="event-time" id="event-time" />
+                </div>
+                <div class="form-group allday-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="event-allday" />
+                    <span class="checkmark"></span>
+                    All day
+                  </label>
+                </div>
+                <div class="form-group flex-2">
+                  <label for="event-desc">Description <span class="optional">(optional)</span></label>
+                  <input type="text" id="event-desc" placeholder="Any details?" />
+                </div>
+              </div>
+              <div class="form-row form-actions-row">
+                <p id="event-form-error" class="error-msg hidden"></p>
+                <button type="submit" class="btn btn-primary">Add Event</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Event list -->
+        <div id="event-list" class="item-list">
+          <div class="empty-state" id="events-empty">
+            <div class="empty-icon">◷</div>
+            <p>No upcoming events — add one above!</p>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ═══════════════════════════ TOAST ════════════════════════════════════ -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
