@@ -385,7 +385,7 @@
       'breadcrumb.contact': 'Cont\u00e1ctanos',
 
       // INDEX — HERO
-      'hero.headline': 'Marketing que<br /><em>mueve la aguja.</em>',
+      'hero.headline': 'Marketing dise\u00f1ado para<br /><em>escalar negocios B2B.</em>',
       'hero.sub': 'Marketing dise\u00f1ado para escalar negocios B2B. Generamos pipeline predecible, acortamos ciclos de venta y construimos motores de crecimiento sostenibles \u2014 con datos reales y resultados concretos.',
       'hero.stat1': 'Crecimiento promedio del pipeline',
       'hero.stat2': 'Reducci\u00f3n del ciclo de ventas',
