@@ -21,12 +21,12 @@
       'footer.col.legal': 'Legal & Policies',
 
       // FOOTER SERVICE LINKS
-      'footer.svc.demand': 'Demand Generation',
-      'footer.svc.revops': 'Revenue Operations',
-      'footer.svc.sales': 'Sales Enablement',
-      'footer.svc.abm': 'Account-Based Marketing',
-      'footer.svc.gtm': 'Go-to-Market Strategy',
-      'footer.svc.analytics': 'Performance Analytics',
+      'footer.svc.demand': 'Predictable Commercial Pipeline',
+      'footer.svc.revops': 'More Meetings with Decision-Makers',
+      'footer.svc.sales': 'Real Alignment: Marketing & Sales',
+      'footer.svc.abm': 'Faster Deal Closing',
+      'footer.svc.gtm': 'Expansion into New Markets',
+      'footer.svc.analytics': 'Data-Driven Growth',
 
       // FOOTER COMPANY LINKS
       'footer.co.why': 'Why Blackscale',
@@ -67,7 +67,7 @@
       'form.challenge.label': "What's your biggest growth challenge? *",
       'form.challenge.placeholder': "Tell us about your current pipeline, revenue goals, or where you're stuck...",
       'form.submit': 'Send Message & Book a Call',
-      'form.note': 'We respond within 1 business day. No spam, ever.',
+      'form.note': 'One of our founders will contact you within one business day.',
       'form.success.h': 'Message received.',
       'form.success.p': 'Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.',
 
@@ -274,6 +274,12 @@
       'contact.next.s3.strong': '30-minute strategy call',
       'contact.next.s3.span': 'We diagnose your biggest growth bottleneck — no commitment required.',
 
+      // LEGAL PAGE
+      'legal.page.tag': 'Compliance &amp; Transparency',
+      'legal.page.h1': 'Legal &amp; <em>Policies</em>',
+      'legal.page.sub': 'Our legal framework is grounded in Colombian law and aligned with international data protection standards. These documents define how we operate, how we protect your information, and your rights as a user.',
+      'legal.breadcrumb': 'Legal &amp; Policies',
+
       // COMPANY SIZE (contact page only)
       'form.size.label': 'Company Size',
       'form.size.placeholder': 'Select company size',
@@ -305,12 +311,12 @@
       'footer.col.legal': 'Legal y Pol\u00edticas',
 
       // FOOTER SERVICE LINKS
-      'footer.svc.demand': 'Generaci\u00f3n de Demanda',
-      'footer.svc.revops': 'Operaciones de Ingresos',
-      'footer.svc.sales': 'Habilitaci\u00f3n de Ventas',
-      'footer.svc.abm': 'Marketing Basado en Cuentas',
-      'footer.svc.gtm': 'Estrategia Go-to-Market',
-      'footer.svc.analytics': 'Anal\u00edtica de Rendimiento',
+      'footer.svc.demand': 'Pipeline Comercial Predecible',
+      'footer.svc.revops': 'M\u00e1s Reuniones con Decisores',
+      'footer.svc.sales': 'Alineaci\u00f3n Real: Marketing y Ventas',
+      'footer.svc.abm': 'Mayor Velocidad de Cierre',
+      'footer.svc.gtm': 'Expansi\u00f3n a Nuevos Mercados',
+      'footer.svc.analytics': 'Crecimiento Basado en Datos',
 
       // FOOTER COMPANY LINKS
       'footer.co.why': 'Por qu\u00e9 Blackscale',
@@ -351,7 +357,7 @@
       'form.challenge.label': '\u00bfCu\u00e1l es tu mayor reto de crecimiento? *',
       'form.challenge.placeholder': 'Cu\u00e9ntanos sobre tu pipeline actual, metas de ingresos o d\u00f3nde est\u00e1s atascado...',
       'form.submit': 'Enviar Mensaje y Reservar Llamada',
-      'form.note': 'Respondemos en 1 d\u00eda h\u00e1bil. Sin spam, nunca.',
+      'form.note': 'Uno de nuestros fundadores se contactar\u00e1 contigo en menos de un d\u00eda h\u00e1bil.',
       'form.success.h': 'Mensaje recibido.',
       'form.success.p': 'Gracias por contactarnos. Un fundador se comunicar\u00e1 contigo en un d\u00eda h\u00e1bil para programar tu llamada de estrategia gratuita.',
 
@@ -381,7 +387,7 @@
 
       // INDEX — HERO
       'hero.headline': 'Marketing que<br /><em>mueve la aguja.</em>',
-      'hero.sub': 'Blackscale Consulting ayuda a empresas B2B a generar leads de alta calidad, fortalecer su pipeline de ventas y desbloquear un crecimiento de ingresos sostenible \u2014 con estrategias basadas en datos reales y resultados concretos.',
+      'hero.sub': 'Marketing dise\u00f1ado para escalar negocios B2B. Generamos pipeline predecible, acortamos ciclos de venta y construimos motores de crecimiento sostenibles \u2014 con datos reales y resultados concretos.',
       'hero.stat1': 'Crecimiento promedio del pipeline',
       'hero.stat2': 'Reducci\u00f3n del ciclo de ventas',
       'hero.stat3': 'Enfoque en ingresos B2B',
@@ -558,6 +564,12 @@
       'contact.next.s3.strong': 'Llamada de estrategia de 30 minutos',
       'contact.next.s3.span': 'Diagnosticamos tu mayor obst\u00e1culo de crecimiento \u2014 sin compromiso.',
 
+      // LEGAL PAGE
+      'legal.page.tag': 'Cumplimiento y Transparencia',
+      'legal.page.h1': 'Legal y <em>Pol\u00edticas</em>',
+      'legal.page.sub': 'Nuestro marco legal est\u00e1 fundamentado en la legislaci\u00f3n colombiana y alineado con los est\u00e1ndares internacionales de protecci\u00f3n de datos. Estos documentos definen c\u00f3mo operamos, c\u00f3mo protegemos tu informaci\u00f3n y tus derechos como usuario.',
+      'legal.breadcrumb': 'Legal y Pol\u00edticas',
+
       // COMPANY SIZE (contact page only)
       'form.size.label': 'Tama\u00f1o de Empresa',
       'form.size.placeholder': 'Selecciona el tama\u00f1o de la empresa',
@@ -590,6 +602,10 @@
 
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
       btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    document.querySelectorAll('[data-lang-block]').forEach(function (el) {
+      el.style.display = el.getAttribute('data-lang-block') === lang ? '' : 'none';
     });
 
     try { localStorage.setItem('bs_lang', lang); } catch (e) {}
