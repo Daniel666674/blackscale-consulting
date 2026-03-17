@@ -669,8 +669,10 @@ a { color: inherit; text-decoration: none; }
 .why__inner {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.why__text {
   max-width: 700px;
-  margin-left: 0;
 }
 
 .why__text h2 {
@@ -859,7 +861,9 @@ a { color: inherit; text-decoration: none; }
 .founder-card:hover {
   background: var(--surface-2);
 }
-.founder-card:hover .founder-card__initials { color: var(--cream-light); }
+.founder-card:hover .founder-card__photo { border-color: var(--gold); }
+.founder-card:hover h3 { color: var(--gold); }
+.founder-card:hover .founder-card__initials { color: var(--gold); }
 .founder-card:hover .founder-card__title { color: var(--cream-light); }
 
 .founder-card__photo {
@@ -870,6 +874,7 @@ a { color: inherit; text-decoration: none; }
   border: 2px solid var(--burgundy);
   flex-shrink: 0;
   overflow: hidden;
+  transition: border-color var(--transition);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -898,6 +903,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--cream-light);
   margin-bottom: 4px;
   letter-spacing: -0.01em;
+  transition: color var(--transition);
 }
 
 .founder-card__title {
