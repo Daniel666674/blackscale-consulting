@@ -670,7 +670,7 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: 1fr;
   max-width: 700px;
-  margin-left: -12px;
+  margin-left: 0;
 }
 
 .why__text h2 {
@@ -853,14 +853,14 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   gap: 28px;
   align-items: flex-start;
-  transition: border-color var(--transition), background var(--transition);
+  transition: background var(--transition);
 }
 
 .founder-card:hover {
   background: var(--surface-2);
 }
-.founder-card:hover .founder-card__initials { color: var(--gold); }
-.founder-card:hover .founder-card__title { color: var(--gold); }
+.founder-card:hover .founder-card__initials { color: var(--cream-light); }
+.founder-card:hover .founder-card__title { color: var(--cream-light); }
 
 .founder-card__photo {
   width: 80px;
