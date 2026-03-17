@@ -66,9 +66,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--burgundy-mid);
-  background: var(--burgundy-subtle);
-  border: 1px solid rgba(85, 28, 37, 0.35);
+  color: var(--cream-light);
+  background: var(--burgundy);
+  border: 1px solid var(--burgundy);
   padding: 5px 14px;
   border-radius: 100px;
   margin-bottom: 20px;
@@ -138,12 +138,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .btn--ghost {
-  background: transparent;
-  color: var(--cream);
-  border-color: var(--border-light);
+  background: var(--burgundy);
+  color: var(--cream-light);
+  border-color: var(--burgundy);
 }
 .btn--ghost:hover {
-  border-color: var(--cream);
+  background: var(--burgundy-dark);
+  border-color: var(--burgundy-dark);
   color: var(--white);
 }
 
@@ -161,15 +162,16 @@ a { color: inherit; text-decoration: none; }
 }
 
 .btn--outline-burgundy {
-  background: transparent;
-  color: var(--burgundy-mid);
+  background: var(--burgundy);
+  color: var(--cream-light);
   border-color: var(--burgundy);
   font-size: 13px;
   padding: 13px 32px;
 }
 .btn--outline-burgundy:hover {
-  background: var(--burgundy);
-  color: var(--cream-light);
+  background: var(--burgundy-dark);
+  border-color: var(--burgundy-dark);
+  color: var(--white);
 }
 
 .btn--lg { padding: 16px 40px; font-size: 13px; }
@@ -240,9 +242,16 @@ a { color: inherit; text-decoration: none; }
   font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--cream-light);
-  transition: color var(--transition);
+  transition: color var(--transition), background var(--transition);
+  border-radius: 6px;
 }
-.nav__links a:hover { color: var(--white); }
+.nav__links a:not(.btn) {
+  padding: 6px 10px;
+}
+.nav__links a:not(.btn):hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.14);
+}
 .nav__links a.active { color: var(--cream); }
 
 .nav__burger {
@@ -328,9 +337,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--burgundy-mid);
-  background: var(--burgundy-subtle);
-  border: 1px solid rgba(85, 28, 37, 0.35);
+  color: var(--cream-light);
+  background: var(--burgundy);
+  border: 1px solid var(--burgundy);
   padding: 5px 14px;
   border-radius: 100px;
   margin-bottom: 24px;
@@ -394,9 +403,9 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(17,17,15,0.75) 0%,
-    rgba(17,17,15,0.60) 40%,
-    rgba(17,17,15,0.88) 100%
+    rgba(17,17,15,0.88) 0%,
+    rgba(17,17,15,0.80) 40%,
+    rgba(17,17,15,0.95) 100%
   );
   pointer-events: none;
   z-index: 0;
@@ -661,6 +670,7 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: 1fr;
   max-width: 700px;
+  margin-left: -40px;
 }
 
 .why__text h2 {
@@ -848,9 +858,11 @@ a { color: inherit; text-decoration: none; }
 
 .founder-card:hover {
   background: var(--surface-2);
-  border-color: var(--burgundy-mid);
-  border-top-color: var(--burgundy);
+  border-color: var(--gold);
+  border-top-color: var(--gold);
 }
+.founder-card:hover .founder-card__initials { color: var(--gold); }
+.founder-card:hover .founder-card__title { color: var(--gold); }
 
 .founder-card__photo {
   width: 80px;
