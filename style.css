@@ -200,36 +200,15 @@ a { color: inherit; text-decoration: none; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   color: var(--white);
   text-decoration: none;
 }
 
-.logo__bb {
-  width: 44px;
-  height: 36px;
-  color: var(--cream);
-  flex-shrink: 0;
-  overflow: visible;
-}
-
-/* If using an actual image logo: */
 .logo__img {
-  height: 36px;
+  height: 32px;
   width: auto;
   object-fit: contain;
 }
-
-.logo__wordmark {
-  font-family: var(--sans);
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  color: var(--white);
-}
-
-.logo--footer .logo__wordmark { color: var(--cream); }
-.logo--footer .logo__bb { color: var(--cream); }
 
 .nav__links {
   display: flex;
