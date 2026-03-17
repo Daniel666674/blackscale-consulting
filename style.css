@@ -670,7 +670,7 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: 1fr;
   max-width: 700px;
-  margin-left: -40px;
+  margin-left: -12px;
 }
 
 .why__text h2 {
@@ -858,8 +858,6 @@ a { color: inherit; text-decoration: none; }
 
 .founder-card:hover {
   background: var(--surface-2);
-  border-color: var(--gold);
-  border-top-color: var(--gold);
 }
 .founder-card:hover .founder-card__initials { color: var(--gold); }
 .founder-card:hover .founder-card__title { color: var(--gold); }
