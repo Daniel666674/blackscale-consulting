@@ -1565,12 +1565,14 @@ a { color: inherit; text-decoration: none; }
   pointer-events: none;
   user-select: none;
   z-index: 1;
-  opacity: 0.28;
+  opacity: 0.30;
   will-change: transform;
 }
 
 /* Section bridges — zero-height divs between sections that let
-   florituras span across the boundary (escapes each section's overflow:hidden) */
+   florituras span across the boundary (escapes each section's overflow:hidden).
+   Each bridge has ONE large floritura anchored to an edge, alternating
+   right/left down the page to create intentional visual connectors. */
 .section-bridge {
   position: relative;
   height: 0;
@@ -1579,7 +1581,7 @@ a { color: inherit; text-decoration: none; }
 }
 .section-bridge .floritura {
   position: absolute;
-  opacity: 0.32;
+  opacity: 0.42;
 }
 
 /* =========================================
