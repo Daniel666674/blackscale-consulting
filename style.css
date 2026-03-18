@@ -3,6 +3,14 @@
    Brand colors from Manual de Marca v1.0
    ========================================= */
 
+@font-face {
+  font-family: 'Juana Light';
+  src: url('Juana-Light.svg#Juana-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* --- Reset & Base --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -31,8 +39,8 @@
   --text:         #ccc8c0;
 
   /* Typography */
-  --serif:  'Cormorant Garamond', Georgia, serif;
-  --sans:   'Poppins', system-ui, sans-serif;
+  --serif:  'Juana Light', Georgia, serif;
+  --sans:   'Juana Light', system-ui, sans-serif;
 
   --radius:    10px;
   --radius-lg: 16px;
