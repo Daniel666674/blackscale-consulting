@@ -1565,8 +1565,21 @@ a { color: inherit; text-decoration: none; }
   pointer-events: none;
   user-select: none;
   z-index: 1;
-  opacity: 0.18;
+  opacity: 0.28;
   will-change: transform;
+}
+
+/* Section bridges — zero-height divs between sections that let
+   florituras span across the boundary (escapes each section's overflow:hidden) */
+.section-bridge {
+  position: relative;
+  height: 0;
+  overflow: visible;
+  z-index: 10;
+}
+.section-bridge .floritura {
+  position: absolute;
+  opacity: 0.32;
 }
 
 /* =========================================
