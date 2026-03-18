@@ -531,6 +531,7 @@ a { color: inherit; text-decoration: none; }
   padding: 130px 0;
   border-top: 1px solid var(--border);
   position: relative;
+  overflow: hidden;
   background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
@@ -632,6 +633,7 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   position: relative;
+  overflow: hidden;
   background-image: url('charles-forerunner-3fPXt37X6UQ-unsplash.jpg');
   background-size: cover;
   background-position: right center;
@@ -916,6 +918,7 @@ a { color: inherit; text-decoration: none; }
   padding: 130px 0;
   border-top: 1px solid var(--border);
   position: relative;
+  overflow: hidden;
   background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
@@ -1086,7 +1089,10 @@ a { color: inherit; text-decoration: none; }
   padding: 130px 0;
   background: var(--brand-black);
   border-top: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
 }
+.contact .container { position: relative; z-index: 1; }
 
 .contact__inner {
   display: grid;
@@ -1398,7 +1404,10 @@ a { color: inherit; text-decoration: none; }
   padding: 100px 0;
   background: var(--brand-black);
   border-top: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
 }
+.values .container { position: relative; z-index: 1; }
 
 .values__grid {
   display: grid;
@@ -1438,7 +1447,10 @@ a { color: inherit; text-decoration: none; }
   padding: 100px 0;
   background: var(--brand-black);
   border-top: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
 }
+.process-detail .container { position: relative; z-index: 1; }
 
 .process-detail__grid {
   display: grid;
@@ -1531,13 +1543,29 @@ a { color: inherit; text-decoration: none; }
   padding: 100px 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
 }
+.contact-inline .container { position: relative; z-index: 1; }
 .contact-inline .section-header {
   margin-bottom: 56px;
 }
 .contact-inline__form {
   max-width: 740px;
   margin: 0 auto;
+}
+
+/* =========================================
+   FLORITURAS — brand decorative elements
+   Low-opacity SVG ornaments used as subtle
+   background support graphics (brand guide)
+   ========================================= */
+.floritura {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  opacity: 0.07;
 }
 
 /* =========================================
