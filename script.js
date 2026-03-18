@@ -93,6 +93,42 @@ document.querySelectorAll('.card, .step, .metric-card, .why__list li, .founder-c
   observer.observe(el);
 });
 
+// Floritura parallax scroll engine
+// Each ornament drifts at its own speed, giving depth and a sense of movement
+(function () {
+  const florituras = document.querySelectorAll('.floritura');
+  if (!florituras.length) return;
+
+  // Alternating speeds — faster ones feel closer, slower ones recede
+  const speeds = [0.07, 0.13, 0.05, 0.16, 0.09, 0.11, 0.06, 0.14, 0.08, 0.12, 0.07, 0.10];
+  // Subtle rotation drift per pixel of scroll (mechanical, engine-like feel)
+  const drifts = [0.004, -0.003, 0.005, -0.004, 0.003, -0.005, 0.004, -0.003, 0.005, -0.004, 0.003, -0.005];
+
+  florituras.forEach((el, i) => {
+    el.dataset.speed = speeds[i % speeds.length];
+    el.dataset.drift = drifts[i % drifts.length];
+    el.dataset.base  = el.style.transform || '';
+  });
+
+  let ticking = false;
+
+  function update() {
+    const sy = window.scrollY;
+    florituras.forEach(el => {
+      const translateY = sy * parseFloat(el.dataset.speed);
+      const rotateDeg  = sy * parseFloat(el.dataset.drift);
+      el.style.transform = el.dataset.base + ` translateY(${translateY}px) rotate(${rotateDeg}deg)`;
+    });
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+
+  update(); // set initial state
+})();
+
 // Back to top button
 (function () {
   const btn = document.getElementById('back-to-top');
