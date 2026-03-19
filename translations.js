@@ -361,7 +361,7 @@
       'form.success.p': 'Gracias por contactarnos. Un fundador se comunicar\u00e1 contigo en un d\u00eda h\u00e1bil para programar tu llamada de estrategia gratuita.',
 
       // SECTION TAGS
-      'tag.what_we_do': 'Lo que hacemos',
+      'tag.what_we_do': 'Qu\u00e9 hacemos',
       'tag.why': 'Por qu\u00e9 Blackscale',
       'tag.team': 'El Equipo',
       'tag.how_we_work': 'C\u00f3mo trabajamos',
@@ -386,14 +386,14 @@
 
       // INDEX — HERO
       'hero.headline': 'Marketing dise\u00f1ado para escalar negocios B2B.',
-      'hero.sub': 'Acompa\u00f1amos a las empresas desde la generaci\u00f3n de demanda hasta el cierre de ventas, alineando marketing y ventas para maximizar resultados.',
-      'hero.stat1': 'Crecimiento promedio del pipeline',
-      'hero.stat2': 'Reducci\u00f3n del ciclo de ventas',
+      'hero.sub': 'En Blackscale Consulting ayudamos a empresas B2B a generar leads de alta calidad y fortalecer su pipeline de ventas mediante estrategias de marketing basadas en datos, optimizaci\u00f3n de pauta digital y sales enablement para convertir m\u00e1s oportunidades en clientes.',
+      'hero.stat1': 'Especializaci\u00f3n en LinkedIn Ads',
+      'hero.stat2': 'Experiencia operando en mercados altamente competitivos',
       'hero.stat3': 'Enfoque en ingresos B2B',
 
       // INDEX — SERVICES PREVIEW
       'idx.svc.heading': 'Resultados que puedes<br /><em>obtener.</em>',
-      'idx.svc.sub': 'Desde un pipeline predecible hasta el cierre m\u00e1s r\u00e1pido de negocios, cada compromiso est\u00e1 construido en torno a resultados que importan para tu negocio.',
+      'idx.svc.sub': 'Acompa\u00f1amos a las empresas desde la generaci\u00f3n de demanda hasta el cierre de ventas, alineando marketing y ventas para maximizar resultados.',
 
       // SERVICE CARD HEADINGS & SHORT DESCRIPTIONS
       'svc.demand.h': 'Pipeline Comercial Predecible',
