@@ -385,8 +385,8 @@
       'breadcrumb.contact': 'Cont\u00e1ctanos',
 
       // INDEX — HERO
-      'hero.headline': 'Marketing dise\u00f1ado para<br /><em>escalar negocios B2B.</em>',
-      'hero.sub': 'Marketing dise\u00f1ado para escalar negocios B2B. Generamos pipeline predecible, acortamos ciclos de venta y construimos motores de crecimiento sostenibles \u2014 con datos reales y resultados concretos.',
+      'hero.headline': 'Marketing dise\u00f1ado para escalar negocios B2B.',
+      'hero.sub': 'Acompa\u00f1amos a las empresas desde la generaci\u00f3n de demanda hasta el cierre de ventas, alineando marketing y ventas para maximizar resultados.',
       'hero.stat1': 'Crecimiento promedio del pipeline',
       'hero.stat2': 'Reducci\u00f3n del ciclo de ventas',
       'hero.stat3': 'Enfoque en ingresos B2B',
