@@ -298,7 +298,7 @@
 
       // FOOTER CTA STRIP
       'footer.cta.h': '\u00bfListo para escalar tus ingresos?',
-      'footer.cta.p': 'Hablemos de tus metas de crecimiento. Sin discursos de venta, solo estrategia.',
+      'footer.cta.p': 'Hablemos de tus metas de crecimiento.',
       'footer.contact_us': 'Cont\u00e1ctanos',
 
       // FOOTER BRAND
