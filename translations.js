@@ -418,8 +418,8 @@
       'idx.why.li2.p': 'Trabajamos exclusivamente en B2B. Entendemos los ciclos de venta complejos, los comit\u00e9s de compra y la din\u00e1mica empresarial.',
       'idx.why.li3.strong': 'Integrados, no subcontratados',
       'idx.why.li3.p': 'Trabajamos como una extensi\u00f3n de tu equipo, no como un proveedor distante. Obtienes pensamiento de nivel senior y ejecuci\u00f3n pr\u00e1ctica.',
-      'idx.why.li4.strong': 'Construido para escalar contigo',
-      'idx.why.li4.p': 'Nuestros marcos est\u00e1n dise\u00f1ados para ser apropiados por tu equipo a largo plazo, no para crear dependencia de nosotros.',
+      'idx.why.li4.strong': 'Basado en datos, no en corazonadas',
+      'idx.why.li4.p': 'Cada recomendaci\u00f3n est\u00e1 respaldada por datos. Auditamos antes de asesorar, y medimos todo lo que ejecutamos para que las decisiones se acumulen con el tiempo.',
 
       // INDEX — FOUNDERS
       'founders.heading': 'Conoce a los<br /><em>fundadores.</em>',
