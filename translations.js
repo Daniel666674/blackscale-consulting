@@ -450,8 +450,8 @@
 
       // SERVICES PAGE
       'svc.page.tag': 'Lo que hacemos',
-      'svc.page.h1': 'Crecimiento B2B integral,<br /><em>hecho bien.</em>',
-      'svc.page.sub': 'Desde la generaci\u00f3n de demanda hasta el cierre de negocios, cubrimos cada palanca que impulsa los ingresos \u2014 con estrategias dise\u00f1adas para tu negocio, no para una plantilla.',
+      'svc.page.h1': 'Crecimiento B2B integral.',
+      'svc.page.sub': 'Desde la generaci\u00f3n de demanda hasta el cierre de negocios, cubrimos cada palanca que impulsa los ingresos, con estrategias dise\u00f1adas para tu negocio.',
 
       // SERVICE CARDS — FULL (services page)
       'svc.demand.full_p': 'Construye pipelines repetibles y escalables con campa\u00f1as dirigidas, estrategia de contenido y alcance multicanal. Identificamos tu perfil de comprador ideal, mapeamos su recorrido y dise\u00f1amos programas que traen las oportunidades correctas a tu embudo \u2014 de forma consistente.',
@@ -487,8 +487,8 @@
 
       // WHY US PAGE
       'why.page.tag': 'Por qu\u00e9 Blackscale',
-      'why.page.h1': 'No nos enfocamos en<br /><em>m\u00e9tricas de vanidad.</em>',
-      'why.page.sub': 'La mayor\u00eda de las agencias de marketing miden clics e impresiones. Nosotros medimos pipeline, ingresos y crecimiento. Cada compromiso est\u00e1 ligado a resultados que importan para tu negocio.',
+      'why.page.h1': 'Marketing enfocado en resultados comerciales',
+      'why.page.sub': 'Nuestro enfoque va m\u00e1s all\u00e1 de la visibilidad. Medimos el impacto en pipeline, ingresos y crecimiento, asegurando que cada acci\u00f3n contribuya directamente a los resultados del negocio.',
       'why.philosophy.heading': 'Los ingresos son la<br /><em>\u00fanica m\u00e9trica que importa.</em>',
       'why.philosophy.sub': 'Hemos visto demasiadas empresas invertir en marketing que se ve bien en un dashboard pero no hace nada por los resultados finales. Blackscale fue construido para hacer las cosas de manera diferente \u2014 cada estrategia, t\u00e1ctica y d\u00f3lar se mide contra una sola cosa: el impacto en los ingresos.',
       'why.li1.strong': 'Mentalidad enfocada en ingresos',
@@ -511,14 +511,14 @@
       'metric.cycle.trend': 'Cierre m\u00e1s r\u00e1pido',
 
       // VALUES
-      'values.heading': 'Lo que creemos<br /><em>define c\u00f3mo trabajamos.</em>',
-      'values.sub': 'No son palabras en una pared \u2014 son los principios que gu\u00edan cada compromiso que asumimos.',
+      'values.heading': 'Lo que creemos,<br /><em>define c\u00f3mo trabajamos.</em>',
+      'values.sub': 'No son solo ideas, son los principios que aplicamos en cada estrategia para garantizar resultados consistentes.',
       'values.v1.h': 'Honestidad sobre comodidad',
-      'values.v1.p': 'Te diremos lo que necesitas escuchar, no lo que quieres o\u00edr. Si tu estrategia est\u00e1 rota, lo diremos \u2014 y luego te ayudaremos a arreglarla.',
+      'values.v1.p': 'Nuestro enfoque se basa en la honestidad estrat\u00e9gica. Analizamos con objetividad, identificamos lo que no est\u00e1 funcionando y construimos soluciones para corregirlo.',
       'values.v2.h': 'Resultados sobre actividad',
-      'values.v2.p': 'M\u00e1s campa\u00f1as no significan m\u00e1s ingresos. Nos enfocamos en las acciones que realmente mueven la aguja, y nos responsabilizamos de los resultados.',
+      'values.v2.p': 'El crecimiento proviene de decisiones estrat\u00e9gicas, no de volumen. Ejecutamos con foco en impacto y responsabilidad sobre los resultados.',
       'values.v3.h': 'Velocidad sobre perfecci\u00f3n',
-      'values.v3.p': 'Hecho y probado supera a perfecto y pendiente. Nos movemos r\u00e1pido, aprendemos de los datos e iteramos \u2014 porque el mercado no espera.',
+      'values.v3.p': 'Implementamos con agilidad, analizamos resultados y ajustamos la estrategia de forma continua.',
       'values.v4.h': 'Asociaci\u00f3n sobre transacci\u00f3n',
       'values.v4.p': 'Estamos invertidos en tu \u00e9xito. Ganamos cuando t\u00fa ganas, y eso define c\u00f3mo nos presentamos cada d\u00eda.',
 
