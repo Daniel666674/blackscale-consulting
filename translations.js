@@ -298,7 +298,7 @@
 
       // FOOTER CTA STRIP
       'footer.cta.h': '\u00bfListo para escalar tus ingresos?',
-      'footer.cta.p': 'Hablemos de tus metas de crecimiento. Sin discursos de venta, solo estrategia.',
+      'footer.cta.p': 'Hablemos de tus metas de crecimiento.',
       'footer.contact_us': 'Cont\u00e1ctanos',
 
       // FOOTER BRAND
@@ -342,7 +342,7 @@
       // SHARED CONTACT FORM
       'form.name': 'Nombre Completo *',
       'form.company': 'Empresa *',
-      'form.email': 'Correo de Trabajo *',
+      'form.email': 'Correo Corporativo *',
       'form.phone': 'Tel\u00e9fono (opcional)',
       'form.interest.label': 'Inter\u00e9s Principal',
       'form.interest.placeholder': '\u00bfEn qu\u00e9 podemos ayudarte?',
@@ -353,7 +353,7 @@
       'form.interest.gtm': 'Estrategia Go-to-Market',
       'form.interest.analytics': 'Anal\u00edtica de Rendimiento',
       'form.interest.notsure': 'A\u00fan no lo s\u00e9',
-      'form.challenge.label': '\u00bfCu\u00e1l es tu mayor reto de crecimiento? *',
+      'form.challenge.label': 'Opcional: \u00bfqu\u00e9 te gustar\u00eda lograr o mejorar en esta etapa?',
       'form.challenge.placeholder': 'Cu\u00e9ntanos sobre tu pipeline actual, metas de ingresos o d\u00f3nde est\u00e1s atascado...',
       'form.submit': 'Enviar Mensaje y Reservar Llamada',
       'form.note': 'Uno de nuestros fundadores se contactar\u00e1 contigo en menos de un d\u00eda h\u00e1bil.',
@@ -446,7 +446,7 @@
 
       // SHARED CONTACT SECTION HEADER
       'contact.heading': 'Inicia la<br /><em>conversaci\u00f3n.</em>',
-      'contact.sub': 'Cu\u00e9ntanos sobre tu negocio y tus metas. Te daremos seguimiento en un d\u00eda h\u00e1bil para agendar tu llamada de estrategia gratuita.',
+      'contact.sub': 'Cu\u00e9ntanos sobre tu negocio y tus metas. Te contactaremos en menos de un d\u00eda h\u00e1bil para agendar una llamada de estrategia gratuita.',
 
       // SERVICES PAGE
       'svc.page.tag': 'Lo que hacemos',
