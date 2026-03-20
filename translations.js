@@ -520,12 +520,12 @@
       'values.v3.h': 'Velocidad sobre perfecci\u00f3n',
       'values.v3.p': 'Implementamos con agilidad, analizamos resultados y ajustamos la estrategia de forma continua.',
       'values.v4.h': 'Asociaci\u00f3n sobre transacci\u00f3n',
-      'values.v4.p': 'Estamos invertidos en tu \u00e9xito. Ganamos cuando t\u00fa ganas, y eso define c\u00f3mo nos presentamos cada d\u00eda.',
+      'values.v4.p': 'Nuestro compromiso est\u00e1 alineado con tu crecimiento. Operamos con una mentalidad de partnership, donde tu \u00e9xito define nuestro trabajo y nuestros resultados.',
 
       // PROCESS PAGE
       'process.page.tag': 'C\u00f3mo trabajamos',
       'process.page.h1': 'Un camino claro desde<br /><em>la estrategia al crecimiento.</em>',
-      'process.page.sub': 'Sin rodeos. Sin 90 d\u00edas de incorporaci\u00f3n. Sin humo y espejos. Empezamos a trabajar r\u00e1pido y mostramos resultados desde el principio \u2014 con plena transparencia en cada paso.',
+      'process.page.sub': 'Ejecuci\u00f3n directa y sin fricci\u00f3n. Activamos r\u00e1pido, generamos tracci\u00f3n desde el inicio y mantenemos total transparencia en cada etapa del proceso.',
       'process.s1.h': 'Diagnosticar',
       'process.s1.p': 'Auditamos tu motor actual de marketing y ventas \u2014 identificando brechas, fugas y oportunidades no aprovechadas en tu pipeline. Sin suposiciones, solo datos.',
       'process.s2.h': 'Estrategizar',
@@ -538,15 +538,15 @@
       // PROCESS DETAIL
       'detail.tag': 'Qu\u00e9 esperar',
       'detail.heading': 'Dentro de cada<br /><em>fase del compromiso.</em>',
-      'detail.sub': 'Esto es lo que realmente hacemos \u2014 en detalle \u2014 en cada etapa de trabajar juntos.',
-      'detail.d1.h': 'La Llamada de Diagn\u00f3stico',
-      'detail.d1.p': 'Comenzamos con una inmersi\u00f3n profunda de 60 minutos en tu negocio \u2014 pipeline actual, metas de ingresos, estructura del equipo, herramientas y lo que se ha intentado antes. No es una llamada de ventas; es una sesi\u00f3n de trabajo. Llegamos preparados con preguntas que revelan los verdaderos obst\u00e1culos de crecimiento.',
-      'detail.d2.h': 'El Plan de Crecimiento',
-      'detail.d2.p': 'Dentro de dos semanas del inicio, recibes un Plan de Crecimiento completo: una hoja de ruta priorizada con iniciativas espec\u00edficas, recomendaciones de canales, hitos a 90 d\u00edas y los KPIs a los que nos comprometeremos. Sin rodeos \u2014 solo un plan claro de acci\u00f3n.',
+      'detail.sub': 'Este es el enfoque que aplicamos en cada fase del proceso para generar resultados consistentes.',
+      'detail.d1.h': 'Llamada de Diagn\u00f3stico',
+      'detail.d1.p': 'Comenzamos con una inmersi\u00f3n profunda de 60 minutos en tu negocio, pipeline actual, metas de ingresos, estructura del equipo, herramientas y lo que se ha intentado antes. No es una llamada de ventas; es una sesi\u00f3n de trabajo. Llegamos preparados con preguntas que revelan los verdaderos obst\u00e1culos de crecimiento.',
+      'detail.d2.h': 'Plan de Crecimiento',
+      'detail.d2.p': 'En las primeras dos semanas recibir\u00e1s un Plan de Crecimiento estructurado: una hoja de ruta personalizada con iniciativas concretas, canales definidos, hitos a 90 d\u00edas y KPIs claros. Un enfoque directo y accionable desde el inicio.',
       'detail.d3.h': 'Ejecuci\u00f3n Integrada',
-      'detail.d3.p': 'No entregamos una presentaci\u00f3n y desaparecemos. Nuestro equipo se integra con el tuyo \u2014 ejecutando campa\u00f1as, creando contenido, coordinando el alcance e iterando en tiempo real. Siempre sabes en qu\u00e9 estamos trabajando y por qu\u00e9.',
+      'detail.d3.p': 'Vamos m\u00e1s all\u00e1 de la planificaci\u00f3n. Trabajamos como una extensi\u00f3n de tu equipo, ejecutando campa\u00f1as, creando contenido y optimizando continuamente con total transparencia.',
       'detail.d4.h': 'Revisiones Mensuales de Rendimiento',
-      'detail.d4.p': 'Cada mes, revisamos qu\u00e9 funcion\u00f3, qu\u00e9 no y d\u00f3nde vamos a doblar la apuesta. Estas sesiones son con tu equipo directivo y se construyen en torno a datos de pipeline e ingresos \u2014 no m\u00e9tricas de actividad.',
+      'detail.d4.p': 'Realizamos revisiones mensuales enfocadas en resultados, identificando oportunidades de mejora y \u00e1reas de expansi\u00f3n, siempre con base en datos de pipeline e ingresos junto a tu equipo directivo.',
 
       // CONTACT PAGE
       'contact.page.tag': 'Hablemos',
