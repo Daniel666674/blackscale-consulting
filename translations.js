@@ -67,6 +67,7 @@
       'form.challenge.label': "What's your biggest growth challenge? *",
       'form.challenge.placeholder': "Tell us about your current pipeline, revenue goals, or where you're stuck...",
       'form.submit': 'Send Message & Book a Call',
+      'btn.book_call': 'Book Your Call',
       'form.note': 'One of our founders will contact you within one business day.',
       'form.success.h': 'Message received.',
       'form.success.p': 'Thank you for reaching out. A founder will be in touch within one business day to schedule your free strategy call.',
@@ -356,6 +357,7 @@
       'form.challenge.label': 'Opcional: \u00bfqu\u00e9 te gustar\u00eda lograr o mejorar en esta etapa?',
       'form.challenge.placeholder': 'Cu\u00e9ntanos sobre tu pipeline actual, metas de ingresos o d\u00f3nde est\u00e1s atascado...',
       'form.submit': 'Enviar Mensaje y Reservar Llamada',
+      'btn.book_call': 'Reserva tu llamada',
       'form.note': 'Uno de nuestros fundadores se contactar\u00e1 contigo en menos de un d\u00eda h\u00e1bil.',
       'form.success.h': 'Mensaje recibido.',
       'form.success.p': 'Gracias por contactarnos. Un fundador se comunicar\u00e1 contigo en un d\u00eda h\u00e1bil para programar tu llamada de estrategia gratuita.',
@@ -612,7 +614,7 @@
 
   // Determine saved language
   var savedLang = 'en';
-  try { savedLang = localStorage.getItem('bs_lang') || 'en'; } catch (e) {}
+  try { savedLang = localStorage.getItem('bs_lang') || 'es'; } catch (e) {}
 
   // Apply immediately (script is at bottom of body, DOM is ready)
   applyLang(savedLang);
