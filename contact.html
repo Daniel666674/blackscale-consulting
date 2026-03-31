@@ -6,10 +6,33 @@
   <title>Get in Touch — Blackscale Consulting</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .field-error { display:none; font-size:.72rem; color:#e05555; margin-top:.3rem; letter-spacing:.02em; }
-    input.invalid, textarea.invalid { border-color:#e05555 !important; background:rgba(224,85,85,0.05) !important; box-shadow:0 0 0 2px rgba(224,85,85,0.15) !important; }
-    input.invalid ~ .field-error, textarea.invalid ~ .field-error { display:block; }
-    input.valid { border-color:rgba(209,156,21,0.5) !important; }
+    .field-error {
+      display: none;
+      font-size: .72rem;
+      color: #e05555;
+      margin-top: .35rem;
+      letter-spacing: .02em;
+      font-style: italic;
+    }
+    .form-group input.invalid,
+    .form-group textarea.invalid {
+      border-color: #e05555 !important;
+      background: rgba(224,85,85,0.06) !important;
+      box-shadow: 0 0 0 2px rgba(224,85,85,0.18) !important;
+      outline: none;
+    }
+    .form-group input.invalid + .field-error,
+    .form-group textarea.invalid + .field-error {
+      display: block;
+    }
+    .form-group input.valid,
+    .form-group textarea.valid {
+      border-color: rgba(209,156,21,0.45) !important;
+    }
+    .btn[disabled] {
+      opacity: .6;
+      cursor: not-allowed;
+    }
   </style>
 </head>
 <body>
@@ -135,10 +158,11 @@
 
           <div class="form-group">
             <label for="challenge" data-i18n="form.challenge.label">What's your biggest growth challenge? *</label>
-            <textarea id="challenge" name="challenge" rows="5" data-i18n-placeholder="form.challenge.placeholder" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck..." required></textarea>
+            <textarea id="challenge" name="challenge" rows="5" data-i18n-placeholder="form.challenge.placeholder" placeholder="Tell us about your current pipeline, revenue goals, or where you're stuck..." required data-validate="required"></textarea>
+              <span class="field-error" id="challenge-err">Please describe your growth challenge</span>
           </div>
 
-          <a href="https://calendly.com/julian-vallejo-blackscale/30min" target="_blank" rel="noopener" class="btn btn--primary btn--full" data-i18n="btn.book_call">Reserva tu llamada</a>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="btn.book_call">Reserva tu llamada</button>
         </form>
 
         <div class="form-success" id="formSuccess">

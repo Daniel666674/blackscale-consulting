@@ -1,41 +1,86 @@
 
 // ── Form Validation ──────────────────────────────────────────
+var CALENDLY_URL = 'https://calendly.com/julian-vallejo-blackscale/30min';
+
+var VALIDATORS = {
+  required: function(val) { return val.trim().length > 0; },
+  email:    function(val) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val.trim()); },
+  phone:    function(val) { return val.trim() === '' || /^[\+\d][\d\s\-\.\(\)]{5,}$/.test(val.trim()); }
+};
+
 function validateField(input) {
-  const val = input.value.trim();
-  const type = input.dataset.validate;
-  let valid = true;
+  var val   = input.value;
+  var type  = input.dataset.validate;
+  var valid = VALIDATORS[type] ? VALIDATORS[type](val) : true;
 
-  if (type === 'required') {
-    valid = val.length > 0;
-  } else if (type === 'email') {
-    valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
-  } else if (type === 'phone') {
-    // Only validate if something was entered
-    if (val.length > 0) {
-      valid = /^[\+\d][\d\s\-\.\(\)]{6,}$/.test(val);
-    } else {
-      valid = true; // phone is optional
-    }
-  }
-
-  if (valid) {
-    input.classList.remove('invalid');
-    if (val.length > 0) input.classList.add('valid');
-    else input.classList.remove('valid');
-  } else {
-    input.classList.add('invalid');
-    input.classList.remove('valid');
-  }
+  input.classList.toggle('invalid', !valid);
+  input.classList.toggle('valid',    valid && val.trim().length > 0);
   return valid;
 }
 
-// Attach live validation on blur
+function validateAll(form) {
+  var fields  = form.querySelectorAll('[data-validate]');
+  var allValid = true;
+  var first   = null;
+  fields.forEach(function(input) {
+    var ok = validateField(input);
+    if (!ok && !first) first = input;
+    if (!ok) allValid = false;
+  });
+  if (first) {
+    first.focus();
+    first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  return allValid;
+}
+
+// Live validation: validate on blur, clear error on input once invalid
 document.querySelectorAll('[data-validate]').forEach(function(input) {
   input.addEventListener('blur', function() { validateField(this); });
   input.addEventListener('input', function() {
     if (this.classList.contains('invalid')) validateField(this);
   });
 });
+
+// ── Contact form submit ──────────────────────────────────────
+var form        = document.getElementById('contactForm');
+var formSuccess = document.getElementById('formSuccess');
+
+if (form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Block submit if any required field is empty/invalid
+    if (!validateAll(form)) return;
+
+    // Disable button to prevent double submit
+    var btn = form.querySelector('button[type="submit"]');
+    if (btn) { btn.disabled = true; btn.textContent = '...'; }
+
+    var data = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(res) {
+      if (res.ok) {
+        form.style.display = 'none';
+        if (formSuccess) formSuccess.classList.add('show');
+        // Open Calendly after successful submission
+        window.open(CALENDLY_URL, '_blank');
+      } else {
+        if (btn) { btn.disabled = false; btn.setAttribute('data-i18n', 'btn.book_call'); btn.textContent = 'Reserva tu llamada'; }
+        alert('Something went wrong. Please try again.');
+      }
+    })
+    .catch(function() {
+      if (btn) { btn.disabled = false; btn.textContent = 'Reserva tu llamada'; }
+      alert('Network error. Please check your connection and try again.');
+    });
+  });
+}
 
 // Mobile menu toggle
 const burger = document.querySelector('.nav__burger');
@@ -59,71 +104,7 @@ window.addEventListener('scroll', () => {
     : 'none';
 });
 
-// Contact form — Formspree AJAX submission
-// This sends data to Formspree which emails you and can connect to your pipeline document
-const form = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
 
-if (form) {
-  form.addEventListener('submit', async (e) => {
-    // Run validation on all fields
-    let allValid = true;
-    form.querySelectorAll('[data-validate]').forEach(function(input) {
-      if (!validateField(input)) allValid = false;
-    });
-    if (!allValid) {
-      e.preventDefault();
-      const firstInvalid = form.querySelector('.invalid');
-      if (firstInvalid) firstInvalid.focus();
-      return;
-    }
-    e.preventDefault();
-
-    const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.textContent;
-
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-
-    const data = new FormData(form);
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        // Hide form, show success message
-        form.style.display = 'none';
-        if (formSuccess) {
-          formSuccess.classList.add('show');
-        }
-      } else {
-        // Show error inline
-        btn.textContent = 'Something went wrong — try again';
-        btn.disabled = false;
-        btn.style.background = 'var(--surface-2)';
-        btn.style.borderColor = 'var(--border-light)';
-        btn.style.color = 'var(--muted-light)';
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.style.background = '';
-          btn.style.borderColor = '';
-          btn.style.color = '';
-        }, 3000);
-      }
-    } catch (err) {
-      btn.textContent = 'Network error — please try again';
-      btn.disabled = false;
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.disabled = false;
-      }, 3000);
-    }
-  });
-}
 
 // Scroll-triggered fade-in for cards and sections
 const observer = new IntersectionObserver((entries) => {
