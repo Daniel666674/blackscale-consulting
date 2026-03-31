@@ -36,9 +36,9 @@
   --surface-2:    #242320;
   --border:       #2e2c28;
   --border-light: #3d3b36;
-  --muted:        #7a7568;
-  --muted-light:  #a09991;
-  --text:         #ccc8c0;
+  --muted:        #9a9488;
+  --muted-light:  #bab4ac;
+  --text:         #dedad4;
 
   /* Typography */
   --serif:  'Juana Light', 'Cormorant Garamond', Georgia, serif;
@@ -56,7 +56,7 @@ body {
   background: var(--brand-black);
   color: var(--text);
   line-height: 1.65;
-  font-size: 16px;
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
 }
 

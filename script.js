@@ -1,3 +1,42 @@
+
+// ── Form Validation ──────────────────────────────────────────
+function validateField(input) {
+  const val = input.value.trim();
+  const type = input.dataset.validate;
+  let valid = true;
+
+  if (type === 'required') {
+    valid = val.length > 0;
+  } else if (type === 'email') {
+    valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+  } else if (type === 'phone') {
+    // Only validate if something was entered
+    if (val.length > 0) {
+      valid = /^[\+\d][\d\s\-\.\(\)]{6,}$/.test(val);
+    } else {
+      valid = true; // phone is optional
+    }
+  }
+
+  if (valid) {
+    input.classList.remove('invalid');
+    if (val.length > 0) input.classList.add('valid');
+    else input.classList.remove('valid');
+  } else {
+    input.classList.add('invalid');
+    input.classList.remove('valid');
+  }
+  return valid;
+}
+
+// Attach live validation on blur
+document.querySelectorAll('[data-validate]').forEach(function(input) {
+  input.addEventListener('blur', function() { validateField(this); });
+  input.addEventListener('input', function() {
+    if (this.classList.contains('invalid')) validateField(this);
+  });
+});
+
 // Mobile menu toggle
 const burger = document.querySelector('.nav__burger');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -27,6 +66,17 @@ const formSuccess = document.getElementById('formSuccess');
 
 if (form) {
   form.addEventListener('submit', async (e) => {
+    // Run validation on all fields
+    let allValid = true;
+    form.querySelectorAll('[data-validate]').forEach(function(input) {
+      if (!validateField(input)) allValid = false;
+    });
+    if (!allValid) {
+      e.preventDefault();
+      const firstInvalid = form.querySelector('.invalid');
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
     e.preventDefault();
 
     const btn = form.querySelector('button[type="submit"]');
